@@ -7,7 +7,7 @@ comments: false
 ---
 Welcome! 
 
-My name is David van Wijk and I am a PhD student in the Aerospace Engineering at Texas A&M University in the Land, Air and Space Robotics (LASR) Laboratory lead by Dr. Manoranjan Majji. 
+My name is David van Wijk and I am a PhD student in the Aerospace Engineering at Texas A&M University in the Land, Air and Space Robotics (LASR) Laboratory led by Dr. Manoranjan Majji. 
 <!-- <center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
 ## Features
