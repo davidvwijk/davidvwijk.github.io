@@ -13,7 +13,7 @@ I graduated Magna Cum Laude in May of 2021 from Cornell University with a B.S. i
 
 In the summer of 2020 I was hired to work remotely with the mechanical engineering team at Northrop Grumman Remotec (Clinton, TN) on the design, analysis, and documentation of mechanical components for their hazardous duty robotic vehicles. Primarily using Autodesk Inventor, I was given a lot of creative freedom to design mechanical parts in order to satisfy requirements for the newest prototype of their medium weight UGV. 
 
-{% capture images %} https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png {% endcapture %} {% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+<!-- {% capture images %} https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png {% endcapture %} {% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %} -->
 
 <img src="assets/img/lisc.png">
 <img src="assets/img/northrop-grumman-logo.jpg">
