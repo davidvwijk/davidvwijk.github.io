@@ -17,7 +17,7 @@ In the summer of 2020 I was hired to work with the mechanical engineering team a
 
 {% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/lisc.png {% endcapture %} {% include gallery images=images cols=1 %}
 
-{% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/northrop-grumman-logo.jpg {% endcapture %} {% include gallery images=images cols=1 %}
+{% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/northrop-grumman-logo_cropped.jpg {% endcapture %} {% include gallery images=images cols=1 %}
 
 
 
