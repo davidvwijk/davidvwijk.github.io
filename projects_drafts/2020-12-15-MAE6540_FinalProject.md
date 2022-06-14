@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Final Project, MAE: 6540"
+title:  "Space Propulsion Physics and Engineering"
 date:   2020-12-15
 excerpt: "Design of Lunar Gateway Cargo Resupply Mission"
 project: true
