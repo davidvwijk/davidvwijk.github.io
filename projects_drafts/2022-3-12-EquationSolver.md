@@ -2,16 +2,12 @@
 layout: post
 title:  "Packing Puzzle using Beam Search"
 date:   2022-4-15
-excerpt: "Design of Lunar Gateway Cargo Resupply Mission"
+excerpt: "Coursework for CSCE625: Artificial Intelligence"
 project: true
 tag:
 comments: true
 ---
-
-In my final year at Cornell University, I took a graduate course on Space Propulsion Physics and Engineering. This course we learned the physics framework required to understand and analyze space propulsion devices and their performances, and explored the mission applications of chemical, electrothermal, electrostatic and electromagnetic propulsion systems. 
-
-
       
 ## Report
 
-## Personal Contribution
+<a href="/project_files/625_packing.pdf" class="btn"> Report PDF </a>
