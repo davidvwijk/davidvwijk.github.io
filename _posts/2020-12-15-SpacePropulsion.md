@@ -14,12 +14,11 @@ In my final year at Cornell University, I took a graduate course on Space Propul
 
 As a final project for MAE6540, the task was to work as a team to design and bid a propulsion system for one of the following spacecraft architectures:
 
-<ul>
-  <li>A constellation of communication satellites in low Earth orbit</li>
-  <li>A space tug-satellite that delivers satellites from ISS orbit to destination orbits around Earth (e.g. GEO, different inclinations, different phasing)</li>
-  <li>A spacecraft that delivers cargo to lunar orbit and returns itself</li>
-  <li>A spacecraft that delivers itself to an asteroid orbit and returns cargo<li>
-</ul>
+* A constellation of communication satellites in low Earth orbit</li>
+* A space tug-satellite that delivers satellites from ISS orbit to destination orbits around Earth (e.g. GEO, different inclinations, different phasing)</li>
+* A spacecraft that delivers cargo to lunar orbit and returns itself</li>
+* A spacecraft that delivers itself to an asteroid orbit and returns cargo<li>
+
       
 We chose to design a cargo resupply mission for <a href="https://en.wikipedia.org/wiki/Lunar_Gateway"><b>Gateway</b></a>, the proposed space station in lunar orbit. 
 
