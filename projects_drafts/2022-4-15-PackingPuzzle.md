@@ -12,7 +12,6 @@ In the spring of 2022, I had the privelege to take the course <a href="https://c
 
 As part of the course, we were tasked with addressing the following prompt:
 
-{% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/project_files/packing_prompt.png {% endcapture %} {% include gallery images=images cols=1 %}
       
 ## Report
 
