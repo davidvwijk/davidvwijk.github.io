@@ -14,4 +14,4 @@ As part of the course, we were tasked with
       
 ## Report
 
-<a href="/project_files/625_packing.pdf" class="btn"> Access the full report PDF</a>
+<a href="/project_files/625_packing.pdf" class="btn"> Report PDF </a>
