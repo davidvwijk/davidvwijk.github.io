@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Solving the Packing Puzzle using Beam Search"
+title:  "Packing Puzzle Solution using Beam Search"
 date:   2022-4-15
 excerpt: "Coursework for CSCE625: Artificial Intelligence"
 project: true
