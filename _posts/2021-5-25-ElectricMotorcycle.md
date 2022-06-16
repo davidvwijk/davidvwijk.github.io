@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "ASML Sponsored Mechatronics Competition"
+title:  "Electric Motorcycle"
 date:   2019-12-15
-excerpt: "Robotics competition associated with MAE 3780"
+excerpt: "Stripping a Suzuki GS450 and going electric!"
 project: true
 tag:
 comments: true
