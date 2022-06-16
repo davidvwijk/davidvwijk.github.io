@@ -27,14 +27,6 @@ For this geometric problem, local search can be an effective solution technique 
 
 $\begin{bmatrix} 1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$
 
-
-\begin{bmatrix}
-1 & 0 & 0 & 0 \\
-1 & 1 & 0 & 0 \\
-1 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0
-\end{bmatrix}
-
 ## Report
 
 If interested, you can access my full report with all the details of my solution approach using the link below: 
@@ -43,4 +35,4 @@ If interested, you can access my full report with all the details of my solution
 
 ## Code 
 
-https://github.com/davidvwijk/packing-puzzle
+<a href="https://github.com/davidvwijk/packing-puzzle"><b>Click here to access the code</b></a>
