@@ -2,7 +2,7 @@
 layout: post
 title:  "Design of Lunar Gateway Cargo Resupply Mission"
 date:   2020-12-15
-excerpt: "MAE6540: Space Propulsion Physics and Engineering"
+excerpt: "Space Propulsion Physics and Engineering"
 project: true
 tag: 
 - Aerospace 
@@ -19,7 +19,6 @@ As a final project for MAE6540, the task was to work as a team to design and bid
 * A spacecraft that delivers cargo to lunar orbit and returns itself
 * A spacecraft that delivers itself to an asteroid orbit and returns cargo
 
-      
 We chose to design a cargo resupply mission for <a href="https://en.wikipedia.org/wiki/Lunar_Gateway"><b>Gateway</b></a>, the proposed space station in lunar orbit. 
 
 ## Report
