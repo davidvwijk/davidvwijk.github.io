@@ -8,10 +8,12 @@ tag:
 comments: true
 ---
 
-In my final year at Cornell University, I took a graduate course on Space Propulsion Physics and Engineering. This course we learned the physics framework required to understand and analyze space propulsion devices and their performances, and explored the mission applications of chemical, electrothermal, electrostatic and electromagnetic propulsion systems. 
+
 
 
       
 ## Report
+
+<a href="/project_files/3780.pdf" class="btn"> Report PDF </a>
 
 ## Personal Contribution
