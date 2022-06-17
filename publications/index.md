@@ -1,6 +1,6 @@
 ---
 layout: page
-title: List of Publications
+title: Publications
 excerpt: "A List of Publications"
 comments: false
 ---
