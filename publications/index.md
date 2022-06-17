@@ -5,4 +5,5 @@ excerpt: "A List of Publications"
 comments: false
 ---
 
-Add links to papers here
+van Wijk, D., Eves, K., and Valasek, J., <em> Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target </em>, 2023. In Review.
+
