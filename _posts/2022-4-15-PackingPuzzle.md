@@ -23,7 +23,7 @@ and rotations (by multiples of 90&deg;); unlike tetris, we also allow the inclus
 
 ## Representation
 
-For this problem, local search can be an effective solution technique since the path to reach the goal is irrelevant. Besides the hint to use local search, we were given no further instruction, so initially, much of my time was spent in problem representation. To tackle this problem I decided to use MATLAB, since I wanted to represent all the possible tiles using a 4 by 4 matrix of either zeros or ones, and I like to use MATLAB when I'm mostly dealing with matrices. This allows all of the possible pieces along with reflections and rotations to be represented in a uniform format. For example, I would represent a T shape, with a single 90 degree rotation as:
+For this problem, local search can be an effective solution technique since the path to reach the goal is irrelevant. Besides the hint to use local search, we were given no further instruction, so initially, much of my time was spent in problem representation. To tackle this problem I decided to use MATLAB, since I wanted to represent all the possible tiles using a 4x4 matrix of either zeros or ones, and I like to use MATLAB when I'm mostly dealing with matrices. This allows all of the possible pieces along with reflections and rotations to be represented in a uniform format. For example, I would represent a T shape, with a single 90 degree rotation as:
 
 $$\begin{bmatrix} 1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$$
 
@@ -31,7 +31,7 @@ and I would represent any O block as:
 
 $$\begin{bmatrix} 1 & 1 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$$
 
-This way, each puzzle piece and its possible orientation was represented uniquely. Thus, all the possible orientations of the pieces can be represented with 19 4 by 4 matrices, and in my code I have kept these pieces separate. The only key point is that each piece should be contained in the 4x4 matrix as close to the top and left sides of the matrix as possible. This is because I will use the (1,1) position of the 4x4 matrices to describe the location of the pieces.
+This way, each puzzle piece and its possible orientation was represented uniquely. Thus, all the possible orientations of the pieces can be represented with 19 4x4 matrices, and in my code I have kept these pieces separate. The only key point is that each piece should be contained in the 4x4 matrix as close to the top and left sides of the matrix as possible. This is because I will use the (1,1) position of the 4x4 matrices to describe the location of the pieces.
 
 The board is represented by an (H+3) by (L+3) matrix. The pieces are placed on the board according to their grid location, and thus given the 4x4 matrices and their location on the board, it is fairly straight forward to generate the board. The reason for the additional 3 rows and columns in the board matrix is to allow for “overhang” where the pieces may be located at row H or column L, and thus part of the piece could be “hanging off” of the H by L section of the board. With this representation, the goal state will be all ones in the H by L section of the board, and 0’s in the remainder of the board. In my code and report I call this overhang section of the board the “gutter”.
 
