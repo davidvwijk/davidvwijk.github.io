@@ -64,10 +64,10 @@ It should be noted that the moves will only be executed if they do not take the 
 The heuristic is a cost function that is used to score each k collection of pieces that make up a valid board. Here, the lower the score, the better the board, or closer to the solution the board is. There are four components to the score which are enumerated below.
 
 <ol>
-  <li>($$c_{1}$$): Cost associated with overlapping pieces which is calculated by the maximum number on the board, times a tunable scalar value</li>
-  <li>($$c_{2}$$): Cost associated with gaps in the board (excluding the gutter). Sums up all the zeros on the board, times some tunable scalar value</li>
-  <li>($$c_{3}$$): Cost associated with overlap in the gutter. This cost starts off very low and gradually increases with the number of iterations. The idea here is to first allow pieces to move around more freely with some overhang but slowly converge onto the tightly packed board</li>
-  <li>Reward associated with filled rows, which is largest for the lowest row. The purpose is to incentivize filling from the bottom row first, which I found to be helpful. Since this is a reward, it subtracts from the cost,</li>
+  <li>(c<sub>1</sub>): Cost associated with overlapping pieces which is calculated by the maximum number on the board, times a tunable scalar value</li>
+  <li>(c<sub>2</sub>): Cost associated with gaps in the board (excluding the gutter). Sums up all the zeros on the board, times some tunable scalar value</li>
+  <li>(c<sub>3</sub>): Cost associated with overlap in the gutter. This cost starts off very low and gradually increases with the number of iterations. The idea here is to first allow pieces to move around more freely with some overhang but slowly converge onto the tightly packed board</li>
+  <li>(c<sub>4</sub>): Reward associated with filled rows, which is largest for the lowest row. The purpose is to incentivize filling from the bottom row first, which I found to be helpful. Since this is a reward, it subtracts from the cost,</li>
 </ol>
 
 $$ \begin{equation} \label{heuristiceqt}
@@ -84,4 +84,4 @@ If interested, you can access my full report with all the details of my solution
 
 ## Code 
 
-<a href="https://github.com/davidvwijk/packing-puzzle"><b>Click here to access the code</b></a>
+<a href="https://github.com/davidvwijk/packing-puzzle"><b> Access the code </b></a>
