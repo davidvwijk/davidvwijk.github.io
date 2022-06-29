@@ -5,7 +5,7 @@ description:        "Personal Website"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.jpg'
-background:         'assets/img/cosmos_background.jpg'
+background:         'assets/img/background_circuit.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://davidvwijk.github.io
