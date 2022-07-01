@@ -2,9 +2,10 @@
 layout: post
 title:  "ASML Sponsored Mechatronics Competition"
 date:   2019-12-15
-excerpt: "Robotics competition associated with MAE 3780"
+excerpt: "Robotics competition associated with MAE 3780 at Cornell"
 project: true
 tag:
+- Robotics
 comments: true
 ---
 
