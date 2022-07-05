@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Equation Simplification using Local Search"
-date:   2022-3-12
+date:   2022-03-12
 excerpt: "Coursework for CSCE625: Artificial Intelligence at TAMU"
 project: true
 tag: 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Electric Motorcycle"
-date:   2021-5-17
+date:   2021-05-17
 excerpt: "Stripping a Suzuki GS450 and going electric!"
 project: true
 tag:
