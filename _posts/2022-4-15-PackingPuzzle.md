@@ -22,6 +22,38 @@ and rotations (by multiples of 90&deg;); unlike tetris, we also allow the inclus
 
 {% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/packingpuzzle_prompt.png {% endcapture %} {% include gallery images=images cols=1 %}
 
+
+## Preamble: Graph Theory Proof
+
+Although we were asked to use local search explicitly in the assignment, I was inspired by the proof shown in \cite{PuzzleProof} to see if I could determine if a packing existed, given only the height of the board <em>h</em> and the length of the board <em>l</em>. Using a graph theory coloring proof, it can be shown that a board will only have a solution if it's dimensions satisfy the following two conditions:
+
+<ol>
+  <li>(<em>h</em> &ge; 3) and (<em>l</em> &ge; 3)</li>
+  <li>(<em>h</em>*<em>l</em>)/20 (k collections of pieces) is even</li>
+</ol>
+
+If we think of the board as an <em>h</em>*<em>l</em> checkerboard, with alternate light and dark squares, and the pieces are colored in this alternating way, we come to an interesting observation. It can be see that for all the tetrominoes except for the "T" shape, it is possible for each piece to be colored with precisely 2 light and 2 dark squares. The T shaped tetrominoe however, can only be colored with either 3 dark squares and 1 light, or the opposite - 3 light and 1 dark. This is illustrated in the figures below.
+$$
+\begin{figure}[<em>h</em>]
+    \centering
+    \includegraphics[angle=0,origin=c,width=0.6\textwidth]{project_files/packingpuzzle/tetrominoes.png}
+    \caption{Pieces colored in checkerboard pattern, excluding T shaped piece \cite{PuzzleProof}}
+    \label{pieces}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=0,origin=c,width=0.24\textwidth]{project_files/packingpuzzle/tshape.png}
+    \caption{T shaped piece colored in checkerboard pattern \cite{PuzzleProof}}
+    \label{tshape}
+\end{figure}
+$$
+
+When coloring the board in the checkerboard manner, the board will always have the same number of dark and light colored squares. Therefore, for a perfect packing solution to exist, we need to be able to have the same number of light pieces as dark pieces on in our set of puzzle pieces to fill the board exactly. Since in either configuration shown in \autoref{tshape}, the T shaped piece will have an odd number of light and dark pieces, the only way we can find a perfect packing for a given board, is if we have an even number of T shaped pieces. It follows then, that since a valid solution is only satisfied if we used exactly k collections of pieces, we have a valid packing solution for only even values of k. Therefore, to answer the prompt: "Is there a way to pack exactly k collections of tetrominoes into the rectangle?" we only need to satisfy the condition that k is even, and that both of the dimensions are greater than or equal to 3. 
+
+With all this said, I still implemented a local search algorithm to determine if a packing solution could be found, because if the prompt was changed to: "<it>How</it> can you pack exactly k collections of tetrominoes into the rectangle?" then the above method would get us nowhere. My code first determines if a packing solution can be found using the above criteria, displays this information to the user, and then proceeds in attempting to find the solution using local search.
+
+
 ## Representation
 
 For this problem, local search can be an effective solution technique since the path to reach the goal is irrelevant. Besides the hint to use local search, we were given no further instruction, so initially, much of my time was spent in problem representation. To tackle this problem I decided to use MATLAB, since I wanted to represent all the possible tiles using a 4x4 matrix of either zeros or ones, and I like to use MATLAB when I'm mostly dealing with matrices. This allows all of the possible pieces along with reflections and rotations to be represented in a uniform format. For example, I would represent a T shape, with a single 90 degree rotation as:
@@ -34,13 +66,13 @@ $$\begin{bmatrix} 1 & 1 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 &
 
 This way, each puzzle piece and its possible orientation was represented uniquely. Thus, all the possible orientations of the pieces can be represented with 19 4x4 matrices, and in my code I have kept these pieces separate. The only key point is that each piece should be contained in the 4x4 matrix as close to the top and left sides of the matrix as possible. This is because I will use the (1,1) position of the 4x4 matrices to describe the location of the pieces.
 
-The board is represented by an (H+3) by (L+3) matrix. The pieces are placed on the board according to their grid location, and thus given the 4x4 matrices and their location on the board, it is fairly straight forward to generate the board. The reason for the additional 3 rows and columns in the board matrix is to allow for “overhang” where the pieces may be located at row H or column L, and thus part of the piece could be “hanging off” of the H by L section of the board. With this representation, the goal state will be all ones in the H by L section of the board, and 0’s in the remainder of the board. In my code and report I call this overhang section of the board the “gutter”.
+The board is represented by an (<em>h</em>+3) by (<em>l</em>+3) matrix. The pieces are placed on the board according to their grid location, and thus given the 4x4 matrices and their location on the board, it is fairly straight forward to generate the board. The reason for the additional 3 rows and columns in the board matrix is to allow for “overhang” where the pieces may be located at row <em>h</em> or column <em>l</em>, and thus part of the piece could be “hanging off” of the <em>h</em> by <em>l</em> section of the board. With this representation, the goal state will be all ones in the <em>h</em> by <em>l</em> section of the board, and 0’s in the remainder of the board. In my code and report I call this overhang section of the board the “gutter”.
 
 ## Algorithm
 
-To solve the packing puzzle problem, I used a stochastic local beam search algorithm. I wrote everything from scratch including all the necessary subfunctions to deal with creating the board representation, generating the puzzle pieces, getting the successors, and evaluating the board. 
+To solve the packing puzzle problem, I used a modifed stochastic beam search. I wrote everything from scratch including all the necessary subfunctions to deal with creating the board representation, generating the puzzle pieces, getting the successors, and evaluating the board. 
 
-The main script will prompt the user for the vertical board dimension, H and the horizontal dimension, L. Then, before doing anything, the script checks the conditions described above, and if H and L don't satisfy those criteria, the script will return "No solution possible". If this check is passed, then I will initialize 50 random beams, where each beam represents k collections of puzzle pieces. Using an evaluation function that will be described in the heuristic section below, each collection of initially random puzzle pieces is scored. Within each collection, we will have k*5 pieces, which are represented by 4x4 matrices, with an associated (x,y) position corresponding to the location of that particular piece on the board, and two identifiers which encode which type of piece it is (i.e. T, O, S/Z etc.) and which version of that piece it is (i.e. rotated 90&deg;, reflected, etc.). I also then compute the score that would result in a successful packing using the evaluation function, which is used in our end condition. 
+The main script will prompt the user for the vertical board dimension, <em>h</em> and the horizontal dimension, <em>l</em>. Then, before doing anything, the script checks the conditions described above, and if <em>h</em> and <em>l</em> don't satisfy those criteria, the script will return "No solution possible". If this check is passed, then I will initialize 50 random beams, where each beam represents k collections of puzzle pieces. Using an evaluation function that will be described in the heuristic section below, each collection of initially random puzzle pieces is scored. Within each collection, we will have k*5 pieces, which are represented by 4x4 matrices, with an associated (x,y) position corresponding to the location of that particular piece on the board, and two identifiers which encode which type of piece it is (i.e. T, O, S/Z etc.) and which version of that piece it is (i.e. rotated 90&deg;, reflected, etc.). I also then compute the score that would result in a successful packing using the evaluation function, which is used in our end condition. 
 
 After the initial set of random beams are generated, we enter a while loop that will only terminate upon finding a board that has the same score as the end condition score calculated above (or upon timeout). Now, we finally begin the local beam search. For each beam, we iterate through each piece it contains, and will generate 5 successors for each piece, generated through actions which are described below. Each successor to the piece will result in a new, slightly different board, which will be evaluated using the evaluation function, and the score will be stored along with the new modified collection. The terminating condition is checked here, and if any of the successors form a solution board, the while loop will exit, and the script will display "Solution found in (number) beam iterations", where (number) is a count that keeps track of our iterations. This is done for all the pieces in all of the collections for all of the beams, which will (number of beams)*(5*k)*5 successors. Each successor here is k collections of pieces, with an associated score. 
 
@@ -58,7 +90,7 @@ The successors in our local search space will be generated using 5 possible acti
   <li>Pick the next version of the current piece, in a cyclic pattern</li>
 </ol>
 
-It should be noted that the moves will only be executed if they do not take the piece out of the board (i.e. the new piece location calculated by the action must be within the H x L matrix making up the valid board). To expand further on action 5, we examine the piece we are generating successors for, and from an ordered list of possible versions of that piece, we select the next in the list, or loop back to the first possible version of the piece. For the T piece, we have 4 versions of this piece, and thus if the piece we are generating successors for is the 3rd version of the T shape, one of the successors of that piece will be the next version of that piece, without changing the location of the piece. In this way we are able to capture all the possible types of movements, rotations and reflections as actions. The reason for making the step of the movement of pieces range from 1 to k is so that the successors can be slightly more diverse, which helped with addressing local minima. I also found it useful for the range of steps to scale with board size for greater generality. 
+It should be noted that the moves will only be executed if they do not take the piece out of the board (i.e. the new piece location calculated by the action must be within the <em>h</em> x <em>l</em> matrix making up the valid board). To expand further on action 5, we examine the piece we are generating successors for, and from an ordered list of possible versions of that piece, we select the next in the list, or loop back to the first possible version of the piece. For the T piece, we have 4 versions of this piece, and thus if the piece we are generating successors for is the 3rd version of the T shape, one of the successors of that piece will be the next version of that piece, without changing the location of the piece. In this way we are able to capture all the possible types of movements, rotations and reflections as actions. The reason for making the step of the movement of pieces range from 1 to k is so that the successors can be slightly more diverse, which helped with addressing local minima. I also found it useful for the range of steps to scale with board size for greater generality. 
 
 ## Heuristic
 
