@@ -35,7 +35,7 @@ Although we were asked to use local search explicitly in the assignment, I was i
 If we think of the board as an <em>h</em>*<em>l</em> checkerboard, with alternate light and dark squares, and the pieces are colored in this alternating way, we come to an interesting observation. It can be see that for all the tetrominoes except for the "T" shape, it is possible for each piece to be colored with precisely 2 light and 2 dark squares. The T shaped tetrominoe however, can only be colored with either 3 dark squares and 1 light, or the opposite - 3 light and 1 dark. This is illustrated in the figures below.
 
 <img src="/project_files/packingpuzzle/tetrominoes.png" alt="Tetrominoes 1">
-<img src="/project_files/packingpuzzle/tshape.png" alt="Tetrominoes 2">
+<img src="/project_files/packingpuzzle/tshape.png" alt="Tetrominoes 2" >
 
 <!-- <img src="/project_files/packingpuzzle/tetrominoes.png" alt="Tetrominoes 1" style="width:500px;height:600px;">
 <img src="/project_files/packingpuzzle/tshape.png" alt="Tetrominoes 2" style="width:500px;height:600px;"> -->
