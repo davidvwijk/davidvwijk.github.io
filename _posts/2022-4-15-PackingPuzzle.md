@@ -2,7 +2,7 @@
 layout: post
 title:  "Packing Puzzle Solution using Stochastic Beam Search"
 date:   2022-04-15
-excerpt: "Coursework for CSCE625: Artificial Intelligence at TAMU"
+excerpt: "CSCE625: Artificial Intelligence at TAMU"
 project: true
 tag:
 - AI
