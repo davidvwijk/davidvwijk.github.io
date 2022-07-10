@@ -25,7 +25,7 @@ and rotations (by multiples of 90&deg;); unlike tetris, we also allow the inclus
 
 ## Preamble: Graph Theory Proof
 
-Although we were asked to use local search explicitly in the assignment, I was inspired by the proof shown in \cite{PuzzleProof} to see if I could determine if a packing existed, given only the height of the board <em>h</em> and the length of the board <em>l</em>. Using a graph theory coloring proof, it can be shown that a board will only have a solution if it's dimensions satisfy the following two conditions:
+Although we were asked to use local search explicitly in the assignment, I was inspired by the proof shown <a href="https://mindyourdecisions.com/blog/2018/06/21/can-you-solve-the-tetris-riddle-aka-tetromino-puzzle/"><b>here</b></a> to see if I could determine if a packing existed, given only the height of the board <em>h</em> and the length of the board <em>l</em>. Using a graph theory coloring proof, it can be shown that a board will only have a solution if it's dimensions satisfy the following two conditions:
 
 <ol>
   <li>(<em>h</em> &ge; 3) and (<em>l</em> &ge; 3)</li>
@@ -34,11 +34,18 @@ Although we were asked to use local search explicitly in the assignment, I was i
 
 If we think of the board as an <em>h</em>*<em>l</em> checkerboard, with alternate light and dark squares, and the pieces are colored in this alternating way, we come to an interesting observation. It can be see that for all the tetrominoes except for the "T" shape, it is possible for each piece to be colored with precisely 2 light and 2 dark squares. The T shaped tetrominoe however, can only be colored with either 3 dark squares and 1 light, or the opposite - 3 light and 1 dark. This is illustrated in the figures below.
 
-<img src="/project_files/packingpuzzle/tetrominoes.png" alt="Tetrominoes 1">
-<img src="/project_files/packingpuzzle/tshape.png" alt="Tetrominoes 2" >
+<!-- <img src="/project_files/packingpuzzle/tetrominoes.png" alt="Tetrominoes 1">
+<img src="/project_files/packingpuzzle/tshape.png" alt="Tetrominoes 2" > -->
 
-<!-- <img src="/project_files/packingpuzzle/tetrominoes.png" alt="Tetrominoes 1" style="width:500px;height:600px;">
-<img src="/project_files/packingpuzzle/tshape.png" alt="Tetrominoes 2" style="width:500px;height:600px;"> -->
+<figure>
+  <img src="/project_files/packingpuzzle/tetrominoes.png" alt="Tetrominoes 1" style="width:871px;height:363px;">
+  <figcaption>Figure 1: Pieces colored in checkerboard pattern, excluding T shaped piece</figcaption>
+</figure>
+
+<figure>
+  <img src="/project_files/packingpuzzle/tshape.png" alt="Tetrominoes 2" style="width:350px;height:224px;">
+  <figcaption>Figure 2: T shaped piece colored in checkerboard pattern</figcaption>
+</figure>
 
 When coloring the board in the checkerboard manner, the board will always have the same number of dark and light colored squares. Therefore, for a perfect packing solution to exist, we need to be able to have the same number of light pieces as dark pieces on in our set of puzzle pieces to fill the board exactly. Since in either configuration shown above, the T shaped piece will have an odd number of light and dark pieces, the only way we can find a perfect packing for a given board, is if we have an even number of T shaped pieces. It follows then, that since a valid solution is only satisfied if we used exactly <em>k</em> collections of pieces, we have a valid packing solution for only even values of <em>k</em>. Therefore, to answer the prompt: "Is there a way to pack exactly <em>k</em> collections of tetrominoes into the rectangle?" we only need to satisfy the condition that <em>k</em> is even, and that both of the dimensions are greater than or equal to 3. 
 
