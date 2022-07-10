@@ -2,7 +2,7 @@
 layout: post
 title:  "Equation Simplification using Search"
 date:   2022-03-12
-excerpt: "Coursework for CSCE625: Artificial Intelligence at TAMU"
+excerpt: "CSCE625: Artificial Intelligence at TAMU"
 project: true
 tag: 
 - AI 
