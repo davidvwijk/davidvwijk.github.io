@@ -9,7 +9,7 @@ tag:
 comments: true
 ---
 
-## Project Goal
+## Project Goals
 
 <ol>
   <li>Minimize cost</li>
@@ -27,6 +27,9 @@ Our finalized electric motorcycle features a modified Suzuki GS450 with a cafe r
 (videos)
 
 ## Reflection 
+
+* budget may have been too restrictive
+* motor was not powerful enough (we were dealing with supply chain issues)
       
 ## Report
 
