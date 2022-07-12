@@ -111,7 +111,7 @@ It took quite a lot of trial and error to tune the scalars associated with each 
 
 If interested, you can access my full report with all the details of my solution approach using the link below: 
 
-<a href="/project_files/625_packing.pdf" class="btn"> Report PDF </a>
+<a href="/project_files/packingpuzzle/625_packing.pdf" class="btn"> Report PDF </a>
 
 ## Code 
 

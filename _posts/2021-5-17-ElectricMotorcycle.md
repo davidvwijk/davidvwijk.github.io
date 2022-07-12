@@ -22,6 +22,11 @@ The goal of this project was to take the frame of a donor gas-powered motorcycle
 
 Our finalized electric motorcycle features a modified Suzuki GS450 with a cafe racer style frame, with a minimalist, modern design approach. It weighs approximately 185 pounds, sports dual shock rear suspension, and 33 mm air assisted forks for the front suspension. It is powered by a 3 kW brushless DC motor, and 6 12V 8Ah Absorbed Glass Mat batteries. The motor is controlled by a 24 Mosfet 50A Controller, and features forward and reverse functionalities in three different speeds. The motorcycle has newly installed hydraulic front brakes and has a 1.4 meter wheel base, and overall length of 2.07 meters. The entire project was completed using $928.53.
 
+<figure>
+  <img src="/project_files/ebike/bikeLabelled.jpg" alt="Labelled Electric Motorcycle!">
+  <!-- <figcaption>Figure 1: Pieces colored in checkerboard pattern, excluding T shaped piece</figcaption> -->
+</figure>
+
 (pictures)
 
 (videos)
@@ -33,4 +38,4 @@ Our finalized electric motorcycle features a modified Suzuki GS450 with a cafe r
       
 ## Report
 
-<a href="/project_files/eBike.pdf" class="btn"> Report PDF </a>
+<a href="/project_files/ebike/eBike.pdf" class="btn"> Report PDF </a>
