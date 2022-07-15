@@ -24,17 +24,36 @@ Our finalized electric motorcycle features a modified Suzuki GS450 with a cafe r
 
 <figure>
   <img src="/project_files/ebike/bikeLabelled.jpg" alt="Labelled Electric Motorcycle!">
-  <!-- <figcaption>Figure 1: Pieces colored in checkerboard pattern, excluding T shaped piece</figcaption> -->
+  <figcaption>Figure 1: Final Product, Labelled </figcaption>
 </figure>
 
 (pictures)
 
 (videos)
 
+## Donor Motorcycle
+
+For our donor motorcycle, we purchased a 1980 Suzuki GS450 for $300, which had not run in many years but had functioning brakes and a fairly intact frame. The GS450 has a dry weight of 385 lbs, sports dual shock rear suspension, and 33 mm air assisted forks for the front suspension. Figure 2, below, shows the donor motorcycle in the condition we purchased it. The seat was not attached, and the high-handle bars and clunky exhaust did not fit the style we had envisioned for our electric motorcycle.
+
+<figure>
+  <img src="/project_files/ebike/OG_Bike1.jpg" alt="Donor Motorcycle!">
+  <img src="/project_files/ebike/OG_Bike2.jpg" alt="Donor Motorcycle!">
+  <figcaption>Figure 2: Donor Motorcyle: Suzuki GS450</figcaption>
+</figure>
+
+We began stripping the donor motorcycle, starting with removing any wiring related to the combustion engine, and removing the exhaust, fuel tank as well as engine. Stripping the motorcycle to its naked frame allowed us to quantify our dimensional constraints and give inspiration for possible frame design changes. Additionally, we removed the seat mounting plate which had been roughly welded on by the previous owner. 
+
+<figure>
+  <img src="/project_files/ebike/bikemod1.jpg" alt="stripped down bike!">
+  <figcaption>Figure 3: Removing exhaust, fuel tank and wiring</figcaption>
+</figure>
+
+## 
+
 ## Reflection 
 
 * budget may have been too restrictive
-* motor was not powerful enough (we were dealing with supply chain issues)
+* motor was not powerful enough (we were dealing with supply chain issues during covid)
       
 ## Report
 
