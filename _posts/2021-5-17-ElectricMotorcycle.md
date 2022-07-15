@@ -37,7 +37,7 @@ For our donor motorcycle, we purchased a 1980 Suzuki GS450 for $300, which had n
 
 <figure>
   <img src="/project_files/ebike/OG_Bike1.jpg" alt="Donor Motorcycle!">
-  <img src="/project_files/ebike/OG_Bike2.jpg" alt="Donor Motorcycle!">
+  <!-- <img src="/project_files/ebike/OG_Bike2.jpg" alt="Donor Motorcycle!"> -->
   <figcaption>Figure 2: Donor Motorcyle: Suzuki GS450</figcaption>
 </figure>
 
