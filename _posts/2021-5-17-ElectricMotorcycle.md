@@ -55,8 +55,6 @@ We began stripping the donor motorcycle, starting with removing any wiring relat
 * budget may have been too restrictive
 * motor was not powerful enough (we were dealing with supply chain issues during covid)
 
-<iframe src='https://solarsystem.nasa.gov/gltf_embed/2378' width='100%' height='450px' frameborder='0' />
-
 ## Report
 
 <a href="/project_files/ebike/eBike.pdf" class="btn"> Report PDF </a>
