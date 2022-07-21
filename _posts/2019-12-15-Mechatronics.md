@@ -22,5 +22,3 @@ The objective of the MAE 3780 Mechatronics Final Project was to design and build
 ## Report
 
 <a href="/project_files/3780.pdf" class="btn"> Report PDF </a>
-
-## Personal Contribution
