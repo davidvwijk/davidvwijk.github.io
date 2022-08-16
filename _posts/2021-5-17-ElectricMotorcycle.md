@@ -27,8 +27,6 @@ Our finalized electric motorcycle features a modified Suzuki GS450 with a cafe r
   <figcaption>Figure 1: Final Product, Labelled </figcaption>
 </figure>
 
-(pictures)
-
 (videos)
 
 ## Donor Motorcycle
@@ -48,12 +46,13 @@ We began stripping the donor motorcycle, starting with removing any wiring relat
   <figcaption>Figure 3: Removing exhaust, fuel tank and wiring</figcaption>
 </figure>
 
-## 
+## Electrical
 
 ## Reflection 
 
+<!-- This project was very 
 * budget may have been too restrictive
-* motor was not powerful enough (we were dealing with supply chain issues during covid)
+* motor was not powerful enough (we were dealing with supply chain issues during covid) -->
 
 ## Report
 
