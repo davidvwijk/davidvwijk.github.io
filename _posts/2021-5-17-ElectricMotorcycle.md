@@ -35,6 +35,8 @@ Our finalized electric motorcycle features a modified Suzuki GS450 with a cafe r
   <source src="/project_files/ebike/ebike_A_mute.mov" type="video/mp4">
 </video>
 
+<center> Final tests (May 2021) </center>
+
 ## Donor Motorcycle
 
 For our donor motorcycle, we purchased a 1980 Suzuki GS450 for $300, which had not run in many years but had functioning brakes and a fairly intact frame. The GS450 has a dry weight of 385 lbs, sports dual shock rear suspension, and 33 mm air assisted forks for the front suspension. Figure 2, below, shows the donor motorcycle in the condition we purchased it. The seat was not attached, and the high-handle bars and clunky exhaust did not fit the style we had envisioned for our electric motorcycle.
