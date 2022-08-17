@@ -27,15 +27,13 @@ Our finalized electric motorcycle features a modified Suzuki GS450 with a cafe r
   <figcaption>Figure 1: Final Product, Labelled </figcaption>
 </figure>
 
-<video autoplay>
+<video width="700" height="600" controls>
   <source src="/project_files/ebike/ebike_D.MOV" type="video/mp4">
 </video>
 
-<video autoplay>
+<video width="700" height="600" controls>
   <source src="/project_files/ebike/ebike_A.MOV" type="video/mp4">
 </video>
-
-(videos)
 
 ## Donor Motorcycle
 
