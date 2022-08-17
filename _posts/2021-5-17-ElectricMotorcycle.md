@@ -35,8 +35,7 @@ Our finalized electric motorcycle features a modified Suzuki GS450 with a cafe r
   <source src="/project_files/ebike/ebike_A_mute.mov" type="video/mp4">
 </video>
 
-&nbsp;
-<center> <font size="+2"> Final tests (May 2021) </font> </center>
+<center> <font size="+.05"> Final tests (May 2021) </font> </center>
 
 ## Donor Motorcycle
 
