@@ -162,10 +162,10 @@ As mentioned in the controller section, we placed our controller such that the w
 
 <figure class="second">
   <a href="/project_files/ebike/Wiring1.jpg" ><img src="/project_files/ebike/Wiring1.jpg" alt=""></a> 
-  <a href="/project_files/ebike/Wiring2.jpg" ><img src="/project_files/ebike/Wiring2.jpg" alt=""></a> 
+  <a href="/project_files/ebike/Wiring3.jpg" ><img src="/project_files/ebike/Wiring3.jpg" alt=""></a> 
 
   <!-- <img src="/project_files/ebike/Wiring1.jpg" alt="">
-  <img src="/project_files/ebike/Wiring2.jpg" alt=""> -->
+  <img src="/project_files/ebike/Wiring3.jpg" alt=""> -->
   <figcaption>Figure 14: Wire Management in Open Electronics Enclosure </figcaption>
 </figure>
 
