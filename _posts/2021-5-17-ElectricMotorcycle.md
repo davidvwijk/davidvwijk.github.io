@@ -161,8 +161,11 @@ Our stock Suzuki utilized a double cradle design that had two members going unde
 As mentioned in the controller section, we placed our controller such that the wire grommet would be we facing towards the motor, batteries and the electronics enclosure to allow for easier wire management. We also made a small incision in the rear wall of the battery enclosure for ground and power. All of the wiring is fed into the electronics enclosure, which can be easily accessed by loosening a few screws. Figure 14 shows the open electronics enclosure, where all the wires from the controller are connected to those of the motor. The electronics enclosure itself is bolted onto the motorcycle using two parallel steel strips just above the motor. 
 
 <figure class="second">
-  <img src="/project_files/ebike/Wiring1.jpg" alt="">
-  <img src="/project_files/ebike/Wiring2.jpg" alt="">
+  <a href="/project_files/ebike/Wiring1.jpg" ><img src="/project_files/ebike/Wiring1.jpg" alt=""></a> 
+  <a href="/project_files/ebike/Wiring2.jpg" ><img src="/project_files/ebike/Wiring2.jpg" alt=""></a> 
+
+  <!-- <img src="/project_files/ebike/Wiring1.jpg" alt="">
+  <img src="/project_files/ebike/Wiring2.jpg" alt=""> -->
   <figcaption>Figure 14: Wire Management in Open Electronics Enclosure </figcaption>
 </figure>
 
