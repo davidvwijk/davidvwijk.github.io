@@ -16,9 +16,14 @@ The objective of the MAE 3780 Mechatronics Final Project was to design and build
 ## Mechanical Design
 
 
+
 ## Algorithm
 
+<figure>
+  <img src="/project_files/mechatronics/flowchart.jpg" alt="">
+  <figcaption>Figure XXX: Final Competition Flowchart</figcaption>
+</figure>
 
 ## Report
 
-<a href="/project_files/3780.pdf" class="btn"> Report PDF </a>
+<a href="/project_files/mechatronics/3780.pdf" class="btn"> Report PDF </a>
