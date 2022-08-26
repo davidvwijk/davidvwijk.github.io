@@ -21,3 +21,8 @@ On a different note, I grew up in upstate New York in an international household
 {% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/lisc.png {% endcapture %} {% include gallery images=images cols=1 %}
 
 {% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/northrop-grumman-logo_cropped.jpg {% endcapture %} {% include gallery images=images cols=1 %}
+
+<!-- <figure>
+  <img src="/project_files/ebike/OG_Bike1.jpg" width="720" height="405" alt="Donor Motorcycle!">
+  <figcaption>Figure 2: Donor Motorcyle: Suzuki GS450</figcaption>
+</figure> -->
