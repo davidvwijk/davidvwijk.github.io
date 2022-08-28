@@ -23,3 +23,5 @@ During my senior year at Cornell, Covid was in full effect. We were required to 
 <!-- ## Shipping Tracker Bot -->
 
 ## Stock Sentiment Bot
+
+Project in progress...

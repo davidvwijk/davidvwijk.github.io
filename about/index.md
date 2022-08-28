@@ -14,13 +14,33 @@ In the summer of 2020 I was hired to work with the mechanical engineering team a
 
 On a different note, I grew up in upstate New York in an international household, so I speak Italian fluently and can hold my own in Spanish. I enjoy playing soccer, reading science fiction and cooking.
 
-<!-- {% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/LASR.png {% endcapture %} {% include gallery images=images cols=1 %} -->
+<figure>
+  <img src="/assets/img/LASR.png" alt="LASR logo">
+  <!-- <figcaption>INSERT CAPTION</figcaption> -->
+</figure>
+
+<figure>
+  <img src="/assets/img/mae_logo.jpg" alt="MAE logo">
+  <!-- <figcaption>INSERT CAPTION</figcaption> -->
+</figure>
+
+<figure>
+  <img src="/assets/img/lisc.png" alt="LISC logo">
+  <!-- <figcaption>INSERT CAPTION</figcaption> -->
+</figure>
+
+<figure>
+  <img src="/assets/img/northrop-grumman-logo_cropped.jpg" alt="Northrop logo">
+  <!-- <figcaption>INSERT CAPTION</figcaption> -->
+</figure>
+
+<!-- {% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/LASR.png {% endcapture %} {% include gallery images=images cols=1 %}
 
 {% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/mae_logo.jpg {% endcapture %} {% include gallery images=images cols=1 %}
 
 {% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/lisc.png {% endcapture %} {% include gallery images=images cols=1 %}
 
-{% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/northrop-grumman-logo_cropped.jpg {% endcapture %} {% include gallery images=images cols=1 %}
+{% capture images %} https://raw.githubusercontent.com/davidvwijk/davidvwijk.github.io/master/assets/img/northrop-grumman-logo_cropped.jpg {% endcapture %} {% include gallery images=images cols=1 %} -->
 
 <!-- <figure>
   <img src="/project_files/ebike/OG_Bike1.jpg" width="720" height="405" alt="Donor Motorcycle!">
