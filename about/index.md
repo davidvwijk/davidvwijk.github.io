@@ -6,7 +6,7 @@ comments: false
 ---
 Welcome! 
 
-My name is David van Wijk and I am a PhD student in the Aerospace Engineering Department at Texas A&M University in the Land, Air and Space Robotics (<a href="https://lasr.tamu.edu/"><b>LASR</b></a>) Laboratory led by Professor Manoranjan Majji.
+My name is David van Wijk and I am a second year PhD student in the Aerospace Engineering Department at Texas A&M University in the Land, Air and Space Robotics (<a href="https://lasr.tamu.edu/"><b>LASR</b></a>) Laboratory led by Professor Manoranjan Majji. I am currently working on reduced order model generation techniques with applications for autonomous docking. Broadly, I am interested in robotics, autonomous systems, and reinforcement learning.
 
 I graduated Magna Cum Laude in May of 2021 from Cornell University with a B.S. in Mechanical Engineering from the Sibley school of Mechanical and Aerospace Engineering. During my undergraduate studies, I was an active member in the Laboratory for Intelligent Systems and Controls (<a href="http://lisc.mae.cornell.edu/wordpress/"><b>LISC</b></a>) under Professor Silvia Ferrari, concentrating on classical control for quadrotors, object detection, and mapping. My research contributed to a paper on Directional Sensor Planning for Occlusion Avoidance accepted to IEEE Transactions on Robotics (link).
 
