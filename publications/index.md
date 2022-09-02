@@ -14,7 +14,7 @@ comments: false
 ## Conference Papers
 
 <ol>
-<li> D. van Wijk, K. Eves, and J. Valasek, "Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target", <em> AIAA Scitech 2023 Forum</em>, 2023. In Review. </li>
+<li> D. van Wijk, K. Eves, and J. Valasek, "Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target", <em> AIAA Scitech 2023 Forum</em>, 2023. </li>
 </ol>
 
 
