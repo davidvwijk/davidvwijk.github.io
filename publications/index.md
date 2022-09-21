@@ -5,6 +5,8 @@ excerpt: "A List of Publications"
 comments: false
 ---
 
+## Google Scholar: <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">David van Wijk</a>
+
 ## Journal Papers
 
 <ol>
