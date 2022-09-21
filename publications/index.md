@@ -5,7 +5,7 @@ excerpt: "A List of Publications"
 comments: false
 ---
 
-<a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">Google Scholar</a>
+<h3><a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">Google Scholar</a></h3>
 
 ## Journal Papers
 
