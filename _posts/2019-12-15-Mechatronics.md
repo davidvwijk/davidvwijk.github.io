@@ -4,6 +4,7 @@ title:  "ASML Sponsored Mechatronics Competition"
 date:   2019-12-15
 excerpt: "Robotics competition associated with MAE 3780 at Cornell"
 project: true
+thumbnail: "/project_files/mechatronics/collectionMode.jpg"
 tag:
 - Robotics
 comments: true
