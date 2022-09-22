@@ -4,6 +4,7 @@ title:  "Electric Motorcycle"
 date:   2021-05-17
 excerpt: "Stripping a Suzuki GS450 and going electric!"
 project: true
+thumbnail: "/project_files/ebike/ebike_thumbnail.jpg"
 tag:
 - Mechanical Design
 comments: true
