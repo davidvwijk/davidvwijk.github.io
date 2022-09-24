@@ -7,6 +7,7 @@ excerpt: "Reviewing the 2020 paper out of Stanford/Facebook AI"
 tag:
 - Robotics
 - Point Cloud Registration
+- Scientific Paper
 comments: true
 ---
 
