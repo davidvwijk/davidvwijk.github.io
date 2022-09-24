@@ -16,7 +16,7 @@ On a different note, I grew up in upstate New York in an international household
 
 <figure>
   <img src="/assets/img/LASR.png" width="466" height = "100%" alt="LASR logo">
-  <figcaption> <center> Spring 2022 - Current </center> </figcaption>
+  <figcaption style="color:black"> <center> <font size="+1"> Spring 2022 - Current </font> </center> </figcaption>
 </figure>
 
 <figure>
