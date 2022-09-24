@@ -17,25 +17,25 @@ On a different note, I grew up in upstate New York in an international household
 <figure>
   <img src="/assets/img/LASR.png" width="466" height = "100%" alt="LASR logo">
   <!-- <figcaption style="color:black"> <center> <font size="+1"> Spring 2022 - Current </font> </center> </figcaption> -->
-  <figcaption> <center> <font size="+.9"> Spring 2022 - Current </font> </center> </figcaption>
+  <figcaption> <center> <font size="+1"> Spring 2022 - Current </font> </center> </figcaption>
 </figure>
 
 <figure>
   <img src="/assets/img/afrl_logo2.png" width="466" height = "100%" alt="AFRL logo">
   <!-- <figcaption style="color:black"> <center> <font size="+1"> Spring 2022 - Current </font> </center> </figcaption> -->
-  <figcaption> <center> <font size="+.9"> Fall 2022 (Current) </font> </center> </figcaption>
+  <figcaption> <center> <font size="+1"> Fall 2022 (Current) </font> </center> </figcaption>
 </figure>
 
 <figure>
   <img src="/assets/img/mae_logo.jpg" width="466" height = "100%" alt="MAE logo">
   <!-- <figcaption> Fall 2017 - Spring 2021 </figcaption> -->
-  <figcaption> <center> <font size="+.9"> Fall 2017 - Spring 2021 </font> </center> </figcaption>
+  <figcaption> <center> <font size="+1"> Fall 2017 - Spring 2021 </font> </center> </figcaption>
 </figure>
 
 <figure>
   <img src="/assets/img/lisc.png" width="466" height = "100%" alt="LISC logo">
   <!-- <figcaption> Summer 2019 - Spring 2021 </figcaption> -->
-  <figcaption> <center> <font size="+.9"> Summer 2019 - Spring 2021 </font> </center> </figcaption>
+  <figcaption> <center> <font size="+1"> Summer 2019 - Spring 2021 </font> </center> </figcaption>
 </figure>
 
 <figure>
