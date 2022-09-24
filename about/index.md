@@ -16,20 +16,20 @@ On a different note, I grew up in upstate New York in an international household
 
 <figure>
   <img src="/assets/img/LASR.png" width="466" height = "100%" alt="LASR logo">
-  <figcaption>Spring 2022 - Current</figcaption>
+  <figcaption> <center> Spring 2022 - Current </center> </figcaption>
 </figure>
 
 <figure>
   <img src="/assets/img/mae_logo.jpg" width="466" height = "100%" alt="MAE logo">
-  <figcaption>Fall 2017 - Spring 2021</figcaption>
+  <figcaption> Fall 2017 - Spring 2021 </figcaption>
 </figure>
 
 <figure>
   <img src="/assets/img/lisc.png" width="466" height = "100%" alt="LISC logo">
-  <figcaption>Summer 2019 - Spring 2021</figcaption>
+  <figcaption> Summer 2019 - Spring 2021 </figcaption>
 </figure>
 
 <figure>
   <img src="/assets/img/northrop-grumman-logo_cropped.jpg" width="466" height = "100%" alt="Northrop logo">
-  <figcaption>Summer 2020</figcaption>
+  <figcaption> Summer 2020 </figcaption>
 </figure>
