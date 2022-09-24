@@ -15,21 +15,21 @@ In the summer of 2020 I was hired to work with the mechanical engineering team a
 On a different note, I grew up in upstate New York in an international household, so I speak Italian fluently and can hold my own in Spanish. I enjoy playing soccer, reading science fiction and cooking.
 
 <figure>
-  <img src="/assets/img/LASR.png" width="466" alt="LASR logo">
-  <!-- <figcaption>INSERT CAPTION</figcaption> -->
+  <img src="/assets/img/LASR.png" width="466" height = "100%" alt="LASR logo">
+  <figcaption>Spring 2022 - Current</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/img/mae_logo.jpg" width="466" alt="MAE logo">
-  <!-- <figcaption>INSERT CAPTION</figcaption> -->
+  <img src="/assets/img/mae_logo.jpg" width="466" height = "100%" alt="MAE logo">
+  <figcaption>Fall 2017 - Spring 2021</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/img/lisc.png" width="466" alt="LISC logo">
-  <!-- <figcaption>INSERT CAPTION</figcaption> -->
+  <img src="/assets/img/lisc.png" width="466" height = "100%" alt="LISC logo">
+  <figcaption>Summer 2019 - Spring 2021</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/img/northrop-grumman-logo_cropped.jpg" width="466" alt="Northrop logo">
-  <!-- <figcaption>INSERT CAPTION</figcaption> -->
+  <img src="/assets/img/northrop-grumman-logo_cropped.jpg" width="466" height = "100%" alt="Northrop logo">
+  <figcaption>Summer 2020</figcaption>
 </figure>
