@@ -5,7 +5,15 @@ excerpt: "A List of Publications"
 comments: false
 ---
 
-<h3><a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">Google Scholar</a></h3>
+<a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
+    <img alt="Google Scholar link" src="assets/img/googleScholar_logo.png" >
+</a>
+
+<a href="https://orcid.org/0000-0003-4494-601X">
+    <img alt="ORCID link" src="assets/img/orcid_logo.png" >
+</a>
+
+<!-- <h3><a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">Google Scholar</a></h3> -->
 
 ## Journal Papers
 
