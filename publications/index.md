@@ -18,7 +18,7 @@ comments: false
 ## Journal Papers
 
 <ol>
-<li> J. Gemerek, B. Fu, Y. Chen, Z. Liu, M. Zheng, D. van Wijk, S. Ferrari, "Directional Sensor Planning for Occlusion Avoidance", <em> IEEE Transactions on Robotics (T-RO)</em>, 2022. [<a href="https://ieeexplore.ieee.org/document/9893394"><u>link</u></a>] </li>
+<li> J. Gemerek, B. Fu, Y. Chen, Z. Liu, M. Zheng, D. van Wijk, S. Ferrari, "Directional Sensor Planning for Occlusion Avoidance", <em> IEEE Transactions on Robotics (T-RO)</em>, 2022. [<a style="color:blue" href="https://ieeexplore.ieee.org/document/9893394"><u>link</u></a>] </li>
 </ol>
 
 ## Conference Papers
