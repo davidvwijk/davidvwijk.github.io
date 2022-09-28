@@ -14,7 +14,7 @@ comments: false
 
   <div class="column">
     <a href="https://orcid.org/0000-0003-4494-601X">
-        <img align='left' alt="ORCID link" src="/assets/img/orcid_logo.png" >
+        <img alt="ORCID link" src="/assets/img/orcid_logo.png" >
     </a>    
   </div>
 </div>
