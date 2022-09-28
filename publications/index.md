@@ -5,19 +5,27 @@ excerpt: "A List of Publications"
 comments: false
 ---
 
-<div class="row">
+<!-- <div class="row">
   <div class="column">
     <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
-        <img alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
+        <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
     </a>
   </div>
 
   <div class="column">
     <a href="https://orcid.org/0000-0003-4494-601X">
-        <img alt="ORCID link" src="/assets/img/orcid_logo.png" >
+        <img align='left' alt="ORCID link" src="/assets/img/orcid_logo.png" >
     </a>    
   </div>
-</div>
+</div> -->
+
+<a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
+    <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
+</a>
+
+<a href="https://orcid.org/0000-0003-4494-601X">
+    <img align='left' alt="ORCID link" src="/assets/img/orcid_logo.png" >
+</a>    
 
 ## Journal Papers
 
