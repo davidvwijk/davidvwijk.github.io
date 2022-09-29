@@ -23,6 +23,8 @@ comments: false
     <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
 </a>
 
+<br>
+
 <a href="https://orcid.org/0000-0003-4494-601X">
     <img align='left' alt="ORCID link" src="/assets/img/orcid_logo.png" >
 </a>    
