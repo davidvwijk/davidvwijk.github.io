@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Paper Summary: Planning under periodic observations: bounds and bounding-based solution"
+date:   2022-10-15
+excerpt: "Summarizing recent paper by Dr. Shell and Dr. Rossi"
+# thumbnail: "/project_files/ROM/ROM_thumbnail2.png"
+tag:
+- Robotics
+- Markov Decision Processes
+- Scientific Paper
+comments: true
+---
+
+<!-- For my first post, I will be reviewing the paper by Lingxiao Li, Minhyuk Sung, Anastasia Dubrovina, Li Yi, and Leonidas Guibas at Stanford University and Facebook AI Research
+[<a href="https://arxiv.org/pdf/1811.08988.pdf">link</a>].
+
+Coming soon... -->
+
+Assumptions:
+- Underlying Markovian process
+- New observations received at constant and known interval (k)
+- No other observations occur between actions
+
+"challenge is sparseness rather than degradation or corruption through random noise"
