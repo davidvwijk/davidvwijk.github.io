@@ -43,9 +43,7 @@ comments: false
 
 <ol>
 <li> D. van Wijk, K. Eves, and J. Valasek, "Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target", <em> AIAA Scitech 2023 Forum</em>, 2023. </li>
-</ol>
 
-<ol>
 <li> R. Bhaskara, D. van Wijk, R. Eapen, D. Adams, C. Peck, M. Majji, A. Katake, T. Kulkarni, A. San Martin, N. Trawny. "Hardware-in-the-Loop Experiments for Model Validation of Velocimeter LIDAR Systems." <em> Rocky Mountain AAS GN&C Conference </em>, 2023. </li>
 </ol>
 
