@@ -4,7 +4,7 @@ title:  "Automation Projects"
 date:   2020-12-15
 excerpt: "Personal projects with bots and automation"
 project: true
-# thumbnail: "/project_files/automation/bot_thumbnail"
+thumbnail: "/project_files/automation/bot_thumbnail1"
 tag:
 - Automation
 - Bots
