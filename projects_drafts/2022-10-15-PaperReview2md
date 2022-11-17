@@ -11,10 +11,7 @@ tag:
 comments: true
 ---
 
-<!-- For my first post, I will be reviewing the paper by Lingxiao Li, Minhyuk Sung, Anastasia Dubrovina, Li Yi, and Leonidas Guibas at Stanford University and Facebook AI Research
-[<a href="https://arxiv.org/pdf/1811.08988.pdf">link</a>].
-
-Coming soon... -->
+This week I will be summarizing the recent paper by Dr. Shell and Dr. Rossi at Texas A&M University and NASA's JPL [<a href="https://arxiv.org/pdf/2208.03351.pdf">link</a>]. The paper covers a novel problem of making decisions under periodic observations 
 
 Assumptions:
 - Underlying Markovian process
@@ -22,3 +19,13 @@ Assumptions:
 - No other observations occur between actions
 
 "challenge is sparseness rather than degradation or corruption through random noise"
+
+Contributions:
+1) Formally define this novel problem as a stochastic decision problem
+2) Derive upper and lower bounds for state-action values 
+3) Propose branch-and-bound method that uses (2) to compute exact solutions to the PSO-MDP
+
+Problem can be formulated as PSO-MDP or an equivalent special POMDP 
+
+-discuss both of those and the rigorous definition here
+
