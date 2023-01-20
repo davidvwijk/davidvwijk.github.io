@@ -3,8 +3,8 @@ layout: post
 title:  "Reduced Order Model Generation"
 date:   2022-7-15
 excerpt: "Ongoing Research at Texas A&M"
-project: false
-research: true
+# project: false
+# research: true
 thumbnail: "/project_files/ROM/ROM_thumbnail2.png"
 tag:
 - Robotics
