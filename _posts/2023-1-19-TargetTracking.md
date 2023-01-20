@@ -12,7 +12,8 @@ tag:
 comments: true
 ---
 
-## <a href="https://arc.aiaa.org/doi/10.2514/6.2023-0128"><u>Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target</u></a>
+## Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target
+<!-- ## <a href="https://arc.aiaa.org/doi/10.2514/6.2023-0128"><u>Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target</u></a> -->
 
 <strong>Abstract: </strong>
 
@@ -35,6 +36,9 @@ policy are shown to be less effective for tracking a maneuvering ground target s
 needs to perform a greater number of correct sequential actions. Finally, the agent is able to
 successfully track a randomly moving target with the presence of occlusions.
 
+For details please read the full paper <a href="https://arc.aiaa.org/doi/10.2514/6.2023-0128"><u>here</u></a>. Below are some of the more interesting animations demonstrating the effectiveness of our approach.
+
 ## Animations 
+
 
 [put animations in here]
