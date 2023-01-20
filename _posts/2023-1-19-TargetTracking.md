@@ -13,7 +13,7 @@ tag:
 comments: true
 ---
 
-## Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target [<a style="color:blue" href="https://arc.aiaa.org/doi/10.2514/6.2023-0128"><u>link</u></a>] 
+## <a href="https://arc.aiaa.org/doi/10.2514/6.2023-0128"><u>Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target</u></a>
 
 <strong>Abstract: </strong>
 
