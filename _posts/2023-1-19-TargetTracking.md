@@ -2,7 +2,7 @@
 layout: post
 title:  "Target Tracking using Deep RL"
 date:   2022-4-15
-excerpt: "Work published at SciTech 2023"
+excerpt: "Work published & presented at SciTech 2023"
 # project: false
 thumbnail: "/project_files/trackingRL/thumbnail_tracking.png"
 tag:
