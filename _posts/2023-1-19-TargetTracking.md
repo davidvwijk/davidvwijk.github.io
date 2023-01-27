@@ -14,7 +14,14 @@ comments: true
 
 ## Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target
 
-[Give introduction to problem, mention scitech etc.]
+During the fall semester of 2021, I spent a large chunk of my time tackling the problem of using deep reinforcement learning (RL) for target tracking of an evasive agent with and without the presence of occlusions. This problem is challenging for a few reasons: 
+
+<ol>
+  <li>A 6-Degree-of-Freedom (DOF) system is considered, with dynamics modelled after a real hexarotor. </li>
+  <li>The visual sensor used by the agent is non-gimballed, meaning the agent must directly control its body dynamics to change camera frame. </li>
+  <li>The agent does not have information about the location or the existence of occlusions. </li>
+  <li>The agent does not have access to maps, terrain features, or landmarks. </li>
+</ol>
 
 ## Abstract
 
