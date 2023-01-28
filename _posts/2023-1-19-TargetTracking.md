@@ -60,12 +60,12 @@ $$ \begin{equation}
 \mathcal{A} = \{z_{cmd},u_{cmd},v_{cmd},r_{cmd}\}
 \end{equation} $$
 
-Let $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ are equivalent to one-half the resolution of the camera. The actions made by the agent are evaluated using the reward function given below. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $$\bar{X}_T$$ = $$\frac{|{X_T}|}{X_{T,MAX}}$$ and $$\bar{Y}_T$$ = $$\frac{|{Y_T}|}{Y_{T,MAX}}$$ where:
+Let $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ are equivalent to one-half the resolution of the camera. The actions made by the agent are evaluated using the reward function given below. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $$\bar{X}_T$$ be $$X_T$$ normalized by $$X_{T,MAX}$$ and $$\bar{Y}_T$$ be $$Y_T$$ normalized by $$Y_{T,MAX}$$ where:
 
 $$ \begin{equation}
   r =
     \begin{cases}
-      40 & ~~~~~ \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
+      40 & \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
       20*\left(1 -\frac{\sqrt[]{X_T^2 + Y_T^2}} {\sqrt[]{X_{T,MAX}^2 + Y_{T,MAX}^2 }} \right) & \text{ Not prior case~ and }  \bar{X}_T < 0.80 \text{ and } \bar{Y}_T < 0.80 \text{ and not obstructed}\\
       -40 & \text{ Not prior cases and } \bar{X}_T < 1.00 \text{ and } \bar{Y}_T < 1.00 \text{ and not obstructed} \\
       -80 &  \text{ Otherwise}
@@ -113,12 +113,12 @@ Things to note about the animations:
   <li>The animations are significantly sped up - the RL agent is able to conistently track the target for over 12 minutes.</li>
 </ol>
 
-<video width="720" height="405" controls>
+<video width="720" height="405" controls autoplay>
   <source src="/project_files/trackingRL/rand_evasive_noOcclusions_vanWijk.mp4" type="video/mp4">
 </video>
 <center> <font size="+.6"> Randomly Moving Evasive Target without Occlusions </font> </center>
 
-<video width="720" height="405" controls>
+<video width="720" height="405" controls autoplay>
   <source src="/project_files/trackingRL/rand_customOcclusions_vanWijk.mp4" type="video/mp4">
 </video>
 <center> <font size="+.6"> Randomly Moving Target with Occlusions </font> </center>
