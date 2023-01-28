@@ -60,7 +60,7 @@ $$ \begin{equation} \label{actions}
 \mathcal{A} = \{z_{cmd},u_{cmd},v_{cmd},r_{cmd}\}
 \end{equation} $$
 
-Let ${X_T}_{MAX}$ and ${Y_T}_{MAX}$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so ${X_T}_{MAX}$ and ${Y_T}_{MAX}$ are equivalent to one-half the resolution of the camera. The actions made by the agent are evaluated using the reward function given below. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $\bar{X}_T=\frac{|{X_T}|}{{X_T}_{MAX}}$ and $\bar{Y}_T=\frac{|{Y_T}|}{{Y_T}_{MAX}}$ where:
+Let $${X_T}_{MAX}$$ and $${Y_T}_{MAX}$$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so $${X_T}_{MAX}$$ and $${Y_T}_{MAX}$$ are equivalent to one-half the resolution of the camera. The actions made by the agent are evaluated using the reward function given below. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $$\bar{X}_T=\frac{|{X_T}|}{{X_T}_{MAX}}$$ and $$\bar{Y}_T=\frac{|{Y_T}|}{{Y_T}_{MAX}}$$ where:
 
 $$ \begin{equation} \label{reward}
   r =
