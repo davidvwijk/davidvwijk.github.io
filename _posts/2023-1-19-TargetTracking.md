@@ -39,14 +39,26 @@ A learning based approach was used to tackle the target tracking problem for a f
   <li>Only the target location in the image frame is required. </li>
 </ol>
 
-With that established, I will give a very brief overview of the type of learning method used in this work: reinforcment learning. In reinforcement learning, the goal is to train an agent to learn the parameters $$\theta$$ of a policy (or controller) $$\pi_{\theta}$$ which maps the observation vector $$\boldsymbol{o}$$ of a partially-observable environment to the action vector $$\boldsymbol{a}$$ of the agent. In a fully-observable environment, this mapping is done from the state vector $$\boldsymbol{s}$$ to actions $$\boldsymbol{a}$$. The agent is evaluated using the scalar reward signal $r$, which, along with the states, is outputted by the environment. This is illustrated in the following figure.
+With that established, I will give a very brief overview of the type of learning method used in this work: reinforcment learning. In reinforcement learning, the goal is to train an agent to learn the parameters $$\theta$$ of a policy (or controller) $$\pi_{\theta}$$ which maps the observation vector $$\boldsymbol{o}$$ of a partially-observable environment to the action vector $$\boldsymbol{a}$$ of the agent. In a fully-observable environment, this mapping is done from the state vector $$\boldsymbol{s}$$ to actions $$\boldsymbol{a}$$. The agent is evaluated using the scalar reward signal <em>r</em>, which, along with the states, is outputted by the environment. This is illustrated in the following figure.
 
 <figure>
-  <img src="/project_files/trackingRL/generalRL_diagram2.png" wdith="620">
-  <figcaption>Diagram of general reinforcement learning problem.</figcaption>
+  <img src="/project_files/trackingRL/generalRL_diagram2.png" wdith="300">
+  <figcaption> <b> Diagram of general reinforcement learning problem. </b> </figcaption>
 </figure>
 
+For the research herein, the environment is assumed to be fully observable.
 
+## Problem Formulation
+
+The target tracking problem and the approach taken can be formalized as a reinforcement learning problem. The specific RL algorithm used is Soft Actor-Critic (SAC) from <em> Stable Baselines3 </em> [1]. SAC is an off-policy actor-critic algorithm that is designed to maximize expected reward while also maximizing entropy [2]. The environment is represented by the UAS, camera, ground target, and occlusions in certain cases. The state-space contains the aircraft states and target pixel position in the camera frame, $$X_T$$ and $$Y_T$$. The aircraft states are internal North-East-Down (NED) position (<em>x</em>, <em>y</em>, <em>z</em>), Forward-Right-Down (FRD) body frame translational velocities (<em>u</em>, <em>v</em>, <em>w</em>), FRD body frame rotational rates (<em>p</em>, <em>q</em>, <em>r</em>), and a 3-2-1 Euler angle rotation sequence from the NED frame to the FRD frame (yaw $$\psi$$, pitch $$\theta$$, and roll $$\phi$$). The agent makes high-level commands, with actions in the set given below, where $$z_{cmd}$$ is the commanded inertial down position (negative altitude), $$u_{cmd}$$ is the commanded body frame forward velocity, $$v_{cmd}$$ is the commanded body frame lateral velocity, and $$r_{cmd}$$ is commanded rotational rate about the body frame down axis (yaw rate when the vehicle is level).
+
+$$ \begin{equation}
+\mathcal{S} = \{X_T,Y_T,x,y,z,u,v,w,p,q,r,\phi,\theta,\psi\}
+\end{equation} $$ 
+
+$$ \begin{equation}
+\mathcal{A} = \{z_{cmd},u_{cmd},v_{cmd},r_{cmd}\}
+\end{equation} $$
 
 ## Animations 
 
@@ -73,3 +85,12 @@ Things to note about the animations:
 ## Acknowledgment
 
 This research was sponsored by CCDC-ARL and was accomplished under Cooperative Agreement Number W911NF-21-2-0064. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the ARL or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation herein.
+
+## References
+
+[1] Hill, A., Raffin, A., Ernestus, M., Gleave, A., Kanervisto, A., Traore, R., Dhariwal, P., Hesse, C., Klimov, O., Nichol, A.,
+Plappert, M., Radford, A., Schulman, J., Sidor, S., and Wu, Y., “Stable Baselines,” https://github.com/hill-a/stable-baselines,
+2018.
+
+[2] Haarnoja, T., Zhou, A., Abbeel, P., and Levine, S., “Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement
+Learning with a Stochastic Actor,” , 2018. https://doi.org/10.48550/ARXIV.1801.01290, URL https://arxiv.org/abs/1801.01290.
