@@ -42,7 +42,7 @@ A learning based approach was used to tackle the target tracking problem for a f
 With that established, I will give a very brief overview of the type of learning method used in this work: reinforcment learning. In reinforcement learning, the goal is to train an agent to learn the parameters $$\theta$$ of a policy (or controller) $$\pi_{\theta}$$ which maps the observation vector $$\boldsymbol{o}$$ of a partially-observable environment to the action vector $$\boldsymbol{a}$$ of the agent. In a fully-observable environment, this mapping is done from the state vector $$\boldsymbol{s}$$ to actions $$\boldsymbol{a}$$. The agent is evaluated using the scalar reward signal <em>r</em>, which, along with the states, is outputted by the environment. This is illustrated in the following figure.
 
 <figure>
-  <img src="/project_files/trackingRL/generalRL_diagram2.png" wdith="300">
+  <img src="/project_files/trackingRL/generalRL_diagram2_small.png" wdith="300">
   <figcaption> <b> Diagram of general reinforcement learning problem. </b> </figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ Let $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ be the maximum pixel locations before the ta
 $$ \begin{equation}
   r =
     \begin{cases}
-      40 & \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
+      40 & ~~ \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
       20*\left(1 -\frac{\sqrt[]{X_T^2 + Y_T^2}} {\sqrt[]{X_{T,MAX}^2 + Y_{T,MAX}^2 }} \right) & \text{ Not prior case~ and }  \bar{X}_T < 0.80 \text{ and } \bar{Y}_T < 0.80 \text{ and not obstructed}\\
       -40 & \text{ Not prior cases and } \bar{X}_T < 1.00 \text{ and } \bar{Y}_T < 1.00 \text{ and not obstructed} \\
       -80 &  \text{ Otherwise}
@@ -116,12 +116,12 @@ Things to note about the animations:
 <video width="720" height="405" controls autoplay>
   <source src="/project_files/trackingRL/rand_evasive_noOcclusions_vanWijk.mp4" type="video/mp4">
 </video>
-<center> <font size="+.6"> Randomly Moving Evasive Target without Occlusions </font> </center>
+<center> <font size="+.6"> <b> Randomly Moving Evasive Target without Occlusions </b> </font> </center>
 
 <video width="720" height="405" controls autoplay>
   <source src="/project_files/trackingRL/rand_customOcclusions_vanWijk.mp4" type="video/mp4">
 </video>
-<center> <font size="+.6"> Randomly Moving Target with Occlusions </font> </center>
+<center> <font size="+.6"> <b> Randomly Moving Target with Occlusions </b> </font> </center>
 
 ## Acknowledgment
 
