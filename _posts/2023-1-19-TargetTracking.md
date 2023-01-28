@@ -60,13 +60,13 @@ $$ \begin{equation}
 \mathcal{A} = \{z_{cmd},u_{cmd},v_{cmd},r_{cmd}\}
 \end{equation} $$
 
-Let $${X_T}_{MAX}$$ and $${Y_T}_{MAX}$$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so $${X_T}_{MAX}$$ and $${Y_T}_{MAX}$$ are equivalent to one-half the resolution of the camera. The actions made by the agent are evaluated using the reward function given below. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $$\bar{X}_T=\frac{|{X_T}|}{{X_T}_{MAX}}$$ and $$\bar{Y}_T=\frac{|{Y_T}|}{{Y_T}_{MAX}}$$ where:
+Let $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ are equivalent to one-half the resolution of the camera. The actions made by the agent are evaluated using the reward function given below. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $$\bar{X}_T=\frac{|{X_T}|}{X_{T,MAX}}$$ and $$\bar{Y}_T=\frac{|{Y_T}|}{Y_{T,MAX}}$$ where:
 
-$$ \begin{equation} \label{reward}
+$$ \begin{equation}
   r =
     \begin{cases}
       40 & \text{ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ }  \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
-      20*\left(1 -\frac{\sqrt[]{X_T^2 + Y_T^2}} {\sqrt[]{{X_T^2}_{MAX} + {Y_T^2}_{MAX} }} \right) & \text{ Not prior case~ and }  \bar{X}_T < 0.80 \text{ and } \bar{Y}_T < 0.80 \text{ and not obstructed}\\
+      20*\left(1 -\frac{\sqrt[]{X_T^2 + Y_T^2}} {\sqrt[]{X_{T,MAX}^2 + Y_{T,MAX}^2 }} \right) & \text{ Not prior case~ and }  \bar{X}_T < 0.80 \text{ and } \bar{Y}_T < 0.80 \text{ and not obstructed}\\
       -40 & \text{ Not prior cases and } \bar{X}_T < 1.00 \text{ and } \bar{Y}_T < 1.00 \text{ and not obstructed} \\
       -80 &  \text{ Otherwise}
     \end{cases}       
@@ -78,15 +78,26 @@ The RL agent takes actions in the simulated environment and receives rewards bas
 
 In the simulation environment, the occlusions are represented as rectangular prisms with heights ranging from 20 to 60 meters. The widths and lengths range from 30 to 80 meters. The dimensions are randomly selected in each new episode, and the occlusions spawn at locations that are randomly placed within a prespecified bounding box. Thus the agent encounters a new environment in each episode, meaning the agent is not simply mapping the environment. The agent does not have access to any sort of map or the knowledge that this environment contains occlusions. At each simulation time step, a check is performed to see if the target is occluded. If this is the case, the agent will receive a large negative reward. Note that the agent is aware of the target's location in the image frame even if it is occluded. Future work will relax this constraint.
 
+<figure>
+  <img src="/project_files/trackingRL/presentation_pic_occlusions.png" wdith="300">
+  <figcaption> <b> Occlusions represented as randomly placed rectangular prisms with random dimensions. </b> </figcaption>
+</figure>
+
 <strong>Target Motions: </strong>
 
 Three distinct target motions were used for training and evaluating the reinforcement learning agent. All the ground targets are modeled as point masses with planar motion. The base speed for all ground targets is randomly selected to be between 1 and 2 meters per second. Except for the evasive target, the target's speed only changes when a new episode begins. Each type of target can randomly stop for a random amount of time between 30 and 60 seconds. At the beginning of each episode, the target's initial heading is randomly selected to be between -80 and 80 degrees from the north.  
 
-$$\begin{enumerate}
-    \item \textbf{Randomly Moving Target}: This ground target changes its heading by a random amount between -20 and 20 degrees from its current heading every 1.5 seconds. 
-    \item \textbf{Sinusoidally Moving Target}: This ground target traces out a sinusoid with an amplitude of 5 meters and a period of 25 meters. The amplitude increases linearly by 17.5 meters per period. 
-    \item \textbf{Randomly Moving Evasive Target}: The evasively moving ground target behaves the same as the randomly moving target, but the evasive target also speeds up when it can hear or see the agent. If the agent is visible by the target (i.e. the line of sight is not obstructed) and the agent is within 100 meters of the target, the target will begin to move 2-4 times faster than its base speed until the UAS exits this radius. The scaling factor for the speed is linearly dependent upon the agent's range to the target. If the agent is within 75 meters from the target, the target will also begin this speed-up procedure regardless of occlusions. This is to account for the acoustic signature of the UAS.
-\end{enumerate}$$
+<ol>
+  <li> <b>Randomly Moving Target: </b> This ground target changes its heading by a random amount between -20 and 20 degrees from its current heading every 1.5 seconds. </li>
+  <li> <b>Sinusoidally Moving Target: </b> This ground target traces out a sinusoid with an amplitude of 5 meters and a period of 25 meters. The amplitude increases linearly by 17.5 meters per period. </li>
+  <li> <b>Randomly Moving Evasive Target: </b> The evasively moving ground target behaves the same as the randomly moving target, but the evasive target also speeds up when it can hear or see the agent. If the agent is visible by the target (i.e. the line of sight is not obstructed) and the agent is within 100 meters of the target, the target will begin to move 2-4 times faster than its base speed until the UAS exits this radius. The scaling factor for the speed is linearly dependent upon the agent's range to the target. If the agent is within 75 meters from the target, the target will also begin this speed-up procedure regardless of occlusions. This is to account for the acoustic signature of the UAS. </li>
+</ol>
+
+<figure class="second"> 
+  <a href="/project_files/trackingRL/presentation_pic_rand_target_grid.png" class="image-popup"><img src="/project_files/trackingRL/presentation_pic_rand_target_grid.png" alt=""></a> 
+  <a href="/project_files/trackingRL/presentation_pic_sin_target_grid.png" class="image-popup"><img src="/project_files/trackingRL/presentation_pic_rand_sin_grid.png" alt=""></a> 
+  <figcaption>Target movement types (click to enlarge)</figcaption> 
+</figure>
 
 If the target encounters an occlusion, it traverses the edge of the occlusion until it can continue on its normal heading. This is done by projecting the target's planned velocity onto the surface of the occlusion. Logical conditions inhibit the target from repeatedly changing direction. This stops the target from getting stuck in corners between occlusions. Notably, the occlusions can still block the line of sight between the target and the agent even though the target doesn't enter the occlusions. This is because the occlusions have a vertical element and the agent moves in 3 dimensions. This creates a realistic simulation of the target going behind a building.
 
