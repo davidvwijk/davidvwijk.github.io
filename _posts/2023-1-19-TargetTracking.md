@@ -60,12 +60,12 @@ $$ \begin{equation}
 \mathcal{A} = \{z_{cmd},u_{cmd},v_{cmd},r_{cmd}\}
 \end{equation} $$
 
-Let $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ are equivalent to one-half the resolution of the camera. The actions made by the agent are evaluated using the reward function given below. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $$\bar{X}_T=\frac{|{X_T}|}{X_{T,MAX}}$$ and $$\bar{Y}_T=\frac{|{Y_T}|}{Y_{T,MAX}}$$ where:
+Let $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ are equivalent to one-half the resolution of the camera. The actions made by the agent are evaluated using the reward function given below. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $$\bar{X}_T$$ = $$\frac{|{X_T}|}{X_{T,MAX}}$$ and $$\bar{Y}_T$$ = $$\frac{|{Y_T}|}{Y_{T,MAX}}$$ where:
 
 $$ \begin{equation}
   r =
     \begin{cases}
-      40 & \text{ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ }  \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
+      40 & ~~~~~ \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
       20*\left(1 -\frac{\sqrt[]{X_T^2 + Y_T^2}} {\sqrt[]{X_{T,MAX}^2 + Y_{T,MAX}^2 }} \right) & \text{ Not prior case~ and }  \bar{X}_T < 0.80 \text{ and } \bar{Y}_T < 0.80 \text{ and not obstructed}\\
       -40 & \text{ Not prior cases and } \bar{X}_T < 1.00 \text{ and } \bar{Y}_T < 1.00 \text{ and not obstructed} \\
       -80 &  \text{ Otherwise}
@@ -80,7 +80,7 @@ In the simulation environment, the occlusions are represented as rectangular pri
 
 <figure>
   <img src="/project_files/trackingRL/presentation_pic_occlusions.png" wdith="300">
-  <figcaption> <b> Occlusions represented as randomly placed rectangular prisms with random dimensions. </b> </figcaption>
+  <!-- <figcaption> <b> Occlusions represented as randomly placed rectangular prisms with random dimensions. </b> </figcaption> -->
 </figure>
 
 <strong>Target Motions: </strong>
@@ -96,7 +96,7 @@ Three distinct target motions were used for training and evaluating the reinforc
 <figure class="second"> 
   <a href="/project_files/trackingRL/presentation_pic_rand_target_grid.png" class="image-popup"><img src="/project_files/trackingRL/presentation_pic_rand_target_grid.png" alt=""></a> 
   <a href="/project_files/trackingRL/presentation_pic_sin_target_grid.png" class="image-popup"><img src="/project_files/trackingRL/presentation_pic_rand_sin_grid.png" alt=""></a> 
-  <figcaption>Target movement types (click to enlarge)</figcaption> 
+  <!-- <figcaption>Target movement types (click to enlarge)</figcaption>  -->
 </figure>
 
 If the target encounters an occlusion, it traverses the edge of the occlusion until it can continue on its normal heading. This is done by projecting the target's planned velocity onto the surface of the occlusion. Logical conditions inhibit the target from repeatedly changing direction. This stops the target from getting stuck in corners between occlusions. Notably, the occlusions can still block the line of sight between the target and the agent even though the target doesn't enter the occlusions. This is because the occlusions have a vertical element and the agent moves in 3 dimensions. This creates a realistic simulation of the target going behind a building.
