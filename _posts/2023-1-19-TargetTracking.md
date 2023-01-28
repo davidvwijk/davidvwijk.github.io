@@ -46,7 +46,7 @@ With that established, I will give a very brief overview of the type of learning
   <figcaption>Diagram of general reinforcement learning problem.</figcaption>
 </figure>
 
-For the research herein, the environment is assumed to be fully observable.
+<!-- For the research herein, the environment is assumed to be fully observable.
 
 ## Problem Formulation
 
@@ -88,7 +88,7 @@ $$\begin{enumerate}
     \item \textbf{Randomly Moving Evasive Target}: The evasively moving ground target behaves the same as the randomly moving target, but the evasive target also speeds up when it can hear or see the agent. If the agent is visible by the target (i.e. the line of sight is not obstructed) and the agent is within 100 meters of the target, the target will begin to move 2-4 times faster than its base speed until the UAS exits this radius. The scaling factor for the speed is linearly dependent upon the agent's range to the target. If the agent is within 75 meters from the target, the target will also begin this speed-up procedure regardless of occlusions. This is to account for the acoustic signature of the UAS.
 \end{enumerate}$$
 
-If the target encounters an occlusion, it traverses the edge of the occlusion until it can continue on its normal heading. This is done by projecting the target's planned velocity onto the surface of the occlusion. Logical conditions inhibit the target from repeatedly changing direction. This stops the target from getting stuck in corners between occlusions. Notably, the occlusions can still block the line of sight between the target and the agent even though the target doesn't enter the occlusions. This is because the occlusions have a vertical element and the agent moves in 3 dimensions. This creates a realistic simulation of the target going behind a building.
+If the target encounters an occlusion, it traverses the edge of the occlusion until it can continue on its normal heading. This is done by projecting the target's planned velocity onto the surface of the occlusion. Logical conditions inhibit the target from repeatedly changing direction. This stops the target from getting stuck in corners between occlusions. Notably, the occlusions can still block the line of sight between the target and the agent even though the target doesn't enter the occlusions. This is because the occlusions have a vertical element and the agent moves in 3 dimensions. This creates a realistic simulation of the target going behind a building. -->
 
 ## Animations 
 
