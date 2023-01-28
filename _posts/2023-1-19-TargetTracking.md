@@ -39,31 +39,30 @@ A learning based approach was used to tackle the target tracking problem for a f
   <li>Only the target location in the image frame is required. </li>
 </ol>
 
-With that established, I will give a very brief overview of the type of learning method used in this work: reinforcment learning. In reinforcement learning, the goal is to train an agent to learn the parameters $$\theta$$ of a policy (or controller) $$\pi_{\theta}$$ which maps the observation vector $$\boldsymbol{o}$$ of a partially-observable environment to the action vector $\boldsymbol{a}$ of the agent. In a fully-observable environment, this mapping is done from the state vector $\boldsymbol{s}$ to actions $\boldsymbol{a}$. The agent is evaluated using the scalar reward signal $r$, which, along with the states, is outputted by the environment. This is illustrated in Fig.~\ref{RL_diagram}.
+With that established, I will give a very brief overview of the type of learning method used in this work: reinforcment learning. In reinforcement learning, the goal is to train an agent to learn the parameters $$\theta$$ of a policy (or controller) $$\pi_{\theta}$$ which maps the observation vector $$\boldsymbol{o}$$ of a partially-observable environment to the action vector $\boldsymbol{a}$ of the agent. In a fully-observable environment, this mapping is done from the state vector $\boldsymbol{s}$ to actions $\boldsymbol{a}$. The agent is evaluated using the scalar reward signal $r$, which, along with the states, is outputted by the environment. This is illustrated in Fig.~$\ref{RL_diagram}$.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[angle=0,origin=c,width=.5\textwidth]{figs/misc/generalRL_diagram2.png}
-    \caption{Diagram of general reinforcement learning problem.}
-    \label{RL_diagram}
-\end{figure}
+<figure>
+  <img src="/project_files/trackingRL/generalRL_diagram2.png" wdith="620">
+  <figcaption>Diagram of general reinforcement learning problem.</figcaption>
+</figure>
 
 For the research herein, the environment is assumed to be fully observable.
 
 ## Problem Formulation
 
-The target tracking problem and the approach taken can be formalized as a reinforcement learning problem. The specific RL algorithm used is Soft Actor-Critic (SAC) from \textit{Stable Baselines3} \cite{stable-baselines}. SAC is an off-policy actor-critic algorithm that is designed to maximize expected reward while also maximizing entropy \cite{SAC}. The environment is represented by the UAS, camera, ground target, and occlusions in certain cases. The state-space contains the aircraft states and target pixel position in the camera frame, $X_{T}$ and $Y_{T}$ (Eq.~\ref{states}). The aircraft states are internal North-East-Down (NED) position ($x$, $y$, and $z$), Forward-Right-Down (FRD) body frame translational velocities ($u$, $v$, and $w$), FRD body frame rotational rates ($p$, $q$, and $r$), and a 3-2-1 Euler angle rotation sequence from the NED frame to the FRD frame (yaw $\psi$, pitch $\theta$, and roll $\phi$). The agent makes high-level commands, with actions in the set given by Eq.~\ref{actions}, where $z_{cmd}$ is the commanded inertial down position (negative altitude), $u_{cmd}$ is the commanded body frame forward velocity, $v_{cmd}$ is the commanded body frame lateral velocity, and $r_{cmd}$ is commanded rotational rate about the body frame down axis (yaw rate when the vehicle is level).
+The target tracking problem and the approach taken can be formalized as a reinforcement learning problem. The specific RL algorithm used is Soft Actor-Critic (SAC) from \textit{Stable Baselines3} \cite{stable-baselines}. SAC is an off-policy actor-critic algorithm that is designed to maximize expected reward while also maximizing entropy \cite{SAC}. The environment is represented by the UAS, camera, ground target, and occlusions in certain cases. The state-space contains the aircraft states and target pixel position in the camera frame, $X_{T}$ and $Y_{T}$ (Eq.~$\ref{states}$). The aircraft states are internal North-East-Down (NED) position ($x$, $y$, and $z$), Forward-Right-Down (FRD) body frame translational velocities ($u$, $v$, and $w$), FRD body frame rotational rates ($p$, $q$, and $r$), and a 3-2-1 Euler angle rotation sequence from the NED frame to the FRD frame (yaw $\psi$, pitch $\theta$, and roll $\phi$). The agent makes high-level commands, with actions in the set given by Eq.~\ref{actions}, where $z_{cmd}$ is the commanded inertial down position (negative altitude), $u_{cmd}$ is the commanded body frame forward velocity, $v_{cmd}$ is the commanded body frame lateral velocity, and $r_{cmd}$ is commanded rotational rate about the body frame down axis (yaw rate when the vehicle is level).
 
-\begin{equation} \label{states}
+$$ \begin{equation} \label{states}
 \mathcal{S} = \{X_{T},Y_{T},x,y,z,u,v,w,p,q,r,\phi,\theta,\psi\}
-\end{equation}
+\end{equation} $$ 
 
-\begin{equation} \label{actions}
+$$ \begin{equation} \label{actions}
 \mathcal{A} = \{z_{cmd},u_{cmd},v_{cmd},r_{cmd}\}
-\end{equation}
+\end{equation} $$
 
 Let ${X_T}_{MAX}$ and ${Y_T}_{MAX}$ be the maximum pixel locations before the target exits the image in the x and y directions, respectively. The camera coordinate frame is centered on the image, so ${X_T}_{MAX}$ and ${Y_T}_{MAX}$ are equivalent to one-half the resolution of the camera according to the camera specifications given in Table~\ref{tab:camera_specs}. The actions made by the agent are evaluated using the reward function given by Eq.~\ref{reward}. The reward function incentivizes the agent to keep the target close to the center of the camera frame. The agent will receive a very large negative reward if the target leaves the camera frame or if the target is obstructed from view by the occlusions. Let $\bar{X}_T=\frac{|{X_T}|}{{X_T}_{MAX}}$ and $\bar{Y}_T=\frac{|{Y_T}|}{{Y_T}_{MAX}}$ where:
-\begin{equation} \label{reward}
+
+$$ \begin{equation} \label{reward}
   r =
     \begin{cases}
       40 & \text{ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ }  \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
@@ -71,23 +70,23 @@ Let ${X_T}_{MAX}$ and ${Y_T}_{MAX}$ be the maximum pixel locations before the ta
       -40 & \text{ Not prior cases and } \bar{X}_T < 1.00 \text{ and } \bar{Y}_T < 1.00 \text{ and not obstructed} \\
       -80 &  \text{ Otherwise}
     \end{cases}       
-\end{equation}
+\end{equation} $$
 
-The RL agent takes actions in the simulated environment and receives rewards based on those actions. Over time, the RL agent converges on a policy that will produce consistently high rewards. The agent learns the behavior that will maximize reward over the course of many environment interactions (i.e. time steps). These environment interactions are divided into \textit{episodes}. A new episode begins when the environment is reset. During a reset, the UAS RL agent is spawned at the origin and at a predefined initial altitude with no rotation, no translational velocity, and no angular velocity. The target is spawned in a random location within the agent's camera frame. The agent will take actions and receive rewards until episode end criteria are reached. For the case of no occlusions, the end criteria are reached if the target goes out of the image frame, or if the episode time exceeds a threshold value. Episodes with occlusions will also end if the episode time exceeds the same threshold value. However, for the case of occlusions, a maximum out-of-frame time of 90 seconds is set, to allow the episode to continue while the target is not in the image frame (i.e. occluded).  
+The RL agent takes actions in the simulated environment and receives rewards based on those actions. Over time, the RL agent converges on a policy that will produce consistently high rewards. The agent learns the behavior that will maximize reward over the course of many environment interactions (i.e. time steps). These environment interactions are divided into $\textit{episodes}$. A new episode begins when the environment is reset. During a reset, the UAS RL agent is spawned at the origin and at a predefined initial altitude with no rotation, no translational velocity, and no angular velocity. The target is spawned in a random location within the agent's camera frame. The agent will take actions and receive rewards until episode end criteria are reached. For the case of no occlusions, the end criteria are reached if the target goes out of the image frame, or if the episode time exceeds a threshold value. Episodes with occlusions will also end if the episode time exceeds the same threshold value. However, for the case of occlusions, a maximum out-of-frame time of 90 seconds is set, to allow the episode to continue while the target is not in the image frame (i.e. occluded).  
 
-\subsection{Occlusions}
+<strong>Occlusions: </strong>
 
-In the simulation environment, the occlusions are represented as rectangular prisms with heights ranging from 20 to 60 meters. The widths and lengths range from 30 to 80 meters. The dimensions are randomly selected in each new episode, and the occlusions spawn at locations that are randomly placed within a prespecified bounding box. Thus the agent encounters a new environment in each episode, meaning the agent is not simply mapping the environment. The agent does not have access to any sort of map or the knowledge that this environment contains occlusions. At each simulation time step, a check is performed to see if the target is occluded. If this is the case, the agent will receive a large negative reward (Eq.~\ref{reward}). Note that the agent is aware of the target's location in the image frame even if it is occluded. Future work will relax this constraint.
+In the simulation environment, the occlusions are represented as rectangular prisms with heights ranging from 20 to 60 meters. The widths and lengths range from 30 to 80 meters. The dimensions are randomly selected in each new episode, and the occlusions spawn at locations that are randomly placed within a prespecified bounding box. Thus the agent encounters a new environment in each episode, meaning the agent is not simply mapping the environment. The agent does not have access to any sort of map or the knowledge that this environment contains occlusions. At each simulation time step, a check is performed to see if the target is occluded. If this is the case, the agent will receive a large negative reward (Eq.~$\ref{reward}$). Note that the agent is aware of the target's location in the image frame even if it is occluded. Future work will relax this constraint.
 
-\subsection{Target Motions}
+<strong>Target Motions: </strong>
 
 Three distinct target motions were used for training and evaluating the reinforcement learning agent. All the ground targets are modeled as point masses with planar motion. The base speed for all ground targets is randomly selected to be between 1 and 2 meters per second. Except for the evasive target, the target's speed only changes when a new episode begins. Each type of target can randomly stop for a random amount of time between 30 and 60 seconds. At the beginning of each episode, the target's initial heading is randomly selected to be between -80 and 80 degrees from the north.  
 
-\begin{enumerate}
+$$\begin{enumerate}
     \item \textbf{Randomly Moving Target}: This ground target changes its heading by a random amount between -20 and 20 degrees from its current heading every 1.5 seconds. 
     \item \textbf{Sinusoidally Moving Target}: This ground target traces out a sinusoid with an amplitude of 5 meters and a period of 25 meters. The amplitude increases linearly by 17.5 meters per period. 
     \item \textbf{Randomly Moving Evasive Target}: The evasively moving ground target behaves the same as the randomly moving target, but the evasive target also speeds up when it can hear or see the agent. If the agent is visible by the target (i.e. the line of sight is not obstructed) and the agent is within 100 meters of the target, the target will begin to move 2-4 times faster than its base speed until the UAS exits this radius. The scaling factor for the speed is linearly dependent upon the agent's range to the target. If the agent is within 75 meters from the target, the target will also begin this speed-up procedure regardless of occlusions. This is to account for the acoustic signature of the UAS.
-\end{enumerate}
+\end{enumerate}$$
 
 If the target encounters an occlusion, it traverses the edge of the occlusion until it can continue on its normal heading. This is done by projecting the target's planned velocity onto the surface of the occlusion. Logical conditions inhibit the target from repeatedly changing direction. This stops the target from getting stuck in corners between occlusions. Notably, the occlusions can still block the line of sight between the target and the agent even though the target doesn't enter the occlusions. This is because the occlusions have a vertical element and the agent moves in 3 dimensions. This creates a realistic simulation of the target going behind a building.
 
