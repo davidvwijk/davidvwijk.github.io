@@ -65,8 +65,8 @@ Let $$X_{T,MAX}$$ and $$Y_{T,MAX}$$ be the maximum pixel locations before the ta
 $$ \begin{equation}
   r =
     \begin{cases}
-      40 & ~~ \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
-      20*\left(1 -\frac{\sqrt[]{X_T^2 + Y_T^2}} {\sqrt[]{X_{T,MAX}^2 + Y_{T,MAX}^2 }} \right) & \text{ Not prior case~ and }  \bar{X}_T < 0.80 \text{ and } \bar{Y}_T < 0.80 \text{ and not obstructed}\\
+      40 & ~ \bar{X}_T < 0.15 \text{ and } \bar{Y}_T < 0.15 \text{ and not obstructed}\\
+      20*\left(1 -\frac{\sqrt[]{X_T^2 + Y_T^2}} {\sqrt[]{X_{T,MAX}^2 + Y_{T,MAX}^2 }} \right) & \text{ Not prior case and }  \bar{X}_T < 0.80 \text{ and } \bar{Y}_T < 0.80 \text{ and not obstructed}\\
       -40 & \text{ Not prior cases and } \bar{X}_T < 1.00 \text{ and } \bar{Y}_T < 1.00 \text{ and not obstructed} \\
       -80 &  \text{ Otherwise}
     \end{cases}       
