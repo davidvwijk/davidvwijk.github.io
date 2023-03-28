@@ -27,7 +27,7 @@ On a different note, I grew up in upstate New York in an international household
 <figure>
   <img src="/assets/img/afrl_logo2.png" width="466" height = "100%" alt="AFRL logo">
   <!-- <figcaption style="color:black"> <center> <font size="+1"> Spring 2022 - Current </font> </center> </figcaption> -->
-  <figcaption> <center> <font size="+1"> Fall 2022 (Current) </font> </center> </figcaption>
+  <figcaption> <center> <font size="+1"> Fall 2022 - Current </font> </center> </figcaption>
 </figure>
 
 <figure>
