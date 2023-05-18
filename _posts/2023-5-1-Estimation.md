@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Estimation of Dynamical Systems"
-date:   2022-5-1
+date:   2023-5-1
 excerpt: "3D printed kinematic machine"
 project: true
 # thumbnail: "/project_files/reuleaux/mechanism_thumbnail.jpg"
