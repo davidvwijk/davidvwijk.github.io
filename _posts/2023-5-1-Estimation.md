@@ -9,12 +9,11 @@ tag:
 - Estimation
 comments: true
 ---
-$
 
 The EKF is a universal method to estimate the state of nonlinear systems, based on utilizing a first-order Taylor series expansion to linearize the dynamics and measurement functions about the estimate of the current state. The basic procedure of an EKF implementation can be boiled down to two main steps: 1) propagation of the mean and covariance and 2) updating the current mean and covariance estimates \cite{DeMarsNotes}.
 
 Consider the general case of a nonlinear system model governed by 
-
+$
 \begin{subequations}
 \begin{equation}
     \boldsymbol{\dot{x}}(t) = \boldsymbol{f}(\boldsymbol{x}(t), \boldsymbol{w}(t))
@@ -24,11 +23,11 @@ Consider the general case of a nonlinear system model governed by
 \end{equation}
 \end{subequations}
 $
-$
-\noindent where $\boldsymbol{x}(t)$ is the state of the system at time \textit{t} and $\boldsymbol{w}(t)$ is a zero mean white-noise process providing stochastic excitation to the dynamics. This process is assumed to have a constant power spectral density, $\boldsymbol{Q}_{\textit{ww}}$. The measurements utilized by the filter ($\boldsymbol{z}_k$) are governed by $\boldsymbol{h}(\boldsymbol{x}_k,\boldsymbol{v}_k)$, where $\boldsymbol{x}_k$ is the state of the system at time $t_k$, and $\boldsymbol{v}_k$ is the measurement noise sampled from a zero mean, white-noise distribution with constant covariance. Both $\boldsymbol{h}(\boldsymbol{x}_k,\boldsymbol{v}_k)$ and $\boldsymbol{f}(\boldsymbol{x}(t), \boldsymbol{w}(t))$ are assumed to be differentiable, with uncorrelated process noise and measurement noise. 
-$
-To begin the estimation process using an EKF, an initial estimate for the mean and covariance of the state is required, denoted $\boldsymbol{m}_{x,k-1}$ and $\boldsymbol{P}_{xx,k-1}$ respectively. For the propagation phase, the mean and covariance estimates are propagated according to
 
+where $\boldsymbol{x}(t)$ is the state of the system at time \textit{t} and $\boldsymbol{w}(t)$ is a zero mean white-noise process providing stochastic excitation to the dynamics. This process is assumed to have a constant power spectral density, $\boldsymbol{Q}_{\textit{ww}}$. The measurements utilized by the filter ($\boldsymbol{z}_k$) are governed by $\boldsymbol{h}(\boldsymbol{x}_k,\boldsymbol{v}_k)$, where $\boldsymbol{x}_k$ is the state of the system at time $t_k$, and $\boldsymbol{v}_k$ is the measurement noise sampled from a zero mean, white-noise distribution with constant covariance. Both $\boldsymbol{h}(\boldsymbol{x}_k,\boldsymbol{v}_k)$ and $\boldsymbol{f}(\boldsymbol{x}(t), \boldsymbol{w}(t))$ are assumed to be differentiable, with uncorrelated process noise and measurement noise. 
+
+To begin the estimation process using an EKF, an initial estimate for the mean and covariance of the state is required, denoted $\boldsymbol{m}_{x,k-1}$ and $\boldsymbol{P}_{xx,k-1}$ respectively. For the propagation phase, the mean and covariance estimates are propagated according to
+$
 \begin{subequations}
     \begin{equation}
         \boldsymbol{\dot{m}}_x(t) = \boldsymbol{f}(\boldsymbol{m}_x(t),\boldsymbol{0}_\textit{w})
@@ -37,6 +36,7 @@ To begin the estimation process using an EKF, an initial estimate for the mean a
         \boldsymbol{\dot{P}}_{xx}(t) = \boldsymbol{F}_{x}(\boldsymbol{m}_x(t))\boldsymbol{P}_{xx}(t) + \boldsymbol{P}_{xx}(t)\boldsymbol{F}^{T}_{x}(\boldsymbol{m}_x(t)) + \boldsymbol{F}_{\textit{w}}(\boldsymbol{m}_x(t))\boldsymbol{Q}_{\textit{ww}}\boldsymbol{F}^{T}_{\textit{w}}(\boldsymbol{m}_x(t))
     \end{equation}
 \end{subequations}
+$
 
 \noindent where $\boldsymbol{0}_\textit{w}$ is a \textit{w}-by-1 column vector with \textit{w} being the dimension of the process noise. Here, $\boldsymbol{F}_{x}(\boldsymbol{m}_x(t))$ is the dynamics Jacobian relative to the state (Eq.~\ref{eq:jacobianDyn}) evaluated at the mean. Similarly, $\boldsymbol{F}_{\textit{w}}(\boldsymbol{m}_x(t))$ is the dynamics Jacobian relative to the process noise, evaluated at the mean, given by 
 
