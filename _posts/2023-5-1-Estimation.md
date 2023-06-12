@@ -14,6 +14,7 @@ This spring semester, I took AERO 626, Estimation of Dynamic Systems, taught by 
 
 -> give example of rigid body spacecraft
 -> example used throughout the derivations that follow
+-> thumbnail ideas: spacecraft, residuals for NLS, 
 
 ## Estimation Algorithms
 
