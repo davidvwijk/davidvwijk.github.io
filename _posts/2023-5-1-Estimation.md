@@ -17,7 +17,8 @@ $$
 \begin{equation}
     \boldsymbol{\dot{x}}(t) = \boldsymbol{f}(\boldsymbol{x}(t), \boldsymbol{w}(t))
 \end{equation}
-\newline
+$$
+$$
 \begin{equation}
     \boldsymbol{z}_k = \boldsymbol{h}(\boldsymbol{x}_k,\boldsymbol{v}_k)
 \end{equation}
