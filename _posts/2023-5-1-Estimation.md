@@ -121,10 +121,6 @@ The updated mean and covariance estimates are then used as the initial condition
 
 It is important to bear in mind that, as formulated above, the general EKF procedure is an \textit{unconstrained} estimator, meaning that the sum of two valid states results in another valid state. For the case of inertia estimation, this is problematic, as the inertia tensor must satisfy the physical constraints described in Sec.~\ref{section:Jconstraint}. With this, it is therefore important to consider constrained estimators, which account for the constraints on the states explicitly in the update formulation through the selection of the linear gain. 
 
-$$
-\subsection{The Constrained Update Extended Kalman Filter}
-$$
-
 <strong>The Constrained Update Extended Kalman Filter: </strong>
 
 <u>Quadratic Programming Approach</u>
@@ -205,12 +201,17 @@ $$
 
 where, for $$i$$ spanning from 1 to the total number of constraints, 
 
-$$
+<!-- $$
 \begin{enumerate}
-    \item If $\lambda_{k_i} > 0$ the constraint is active
-    \item If $\lambda_{k_i} < 0$ the constraint is unfeasible and is removed by setting it to zero \\
+    \item If $$\lambda_{k_i} > 0$$ the constraint is active
+    \item If $$\lambda_{k_i} < 0$$ the constraint is unfeasible and is removed by setting it to zero
 \end{enumerate}
-$$
+$$ -->
+
+<ol>
+<li> If $$\lambda_{k_i} > 0$$ the constraint is active </li>
+<li> If $$\lambda_{k_i} < 0$$ the constraint is unfeasible and is removed by setting it to zero </li>
+</ol>
 
 Constraints are thus applied to the state update as,
 
@@ -349,7 +350,7 @@ $$
 
 Converting into matrix form, recalling that $$\Delta\boldsymbol{x}_{k}$$ is a column vector with 6 rows, the constraint function for this case will be discretized for each constraint case. Due to the nature of the problem, multiple triangle inequality constraints cannot be violated simultaneously, and thus it is necessary to check each constraint individually.
 
-Similarly, the positivity constraints are formed by ensuring that the update terms plus the previous state estimates are greater than or equal to a small positive constant, $\epsilon$, resulting in,
+Similarly, the positivity constraints are formed by ensuring that the update terms plus the previous state estimates are greater than or equal to a small positive constant, $$\epsilon$$, resulting in,
 
 $$
 \begin{equation}
@@ -496,17 +497,17 @@ $$
 \begin{equation}
     \boldsymbol{\hat{z}} =
     \begin{bmatrix}
-        \boldsymbol{\hat{z}}_1 ~~ \boldsymbol{\hat{z}}_2 ~~ \hdots ~~ \boldsymbol{\hat{z}}_m
+        \boldsymbol{\hat{z}}_1 ~~ \boldsymbol{\hat{z}}_2 ~~ \cdots ~~ \boldsymbol{\hat{z}}_m
     \end{bmatrix}^{T}
     = \text{expected measurements}
 \end{equation}
 $$
 
-$$
+$$  
 \begin{equation}
     \boldsymbol{\hat{x}} =
     \begin{bmatrix}
-        \boldsymbol{\hat{x}}_1 ~~ \boldsymbol{\hat{x}}_2 ~~ \hdots ~~ \boldsymbol{\hat{x}}_m
+        \boldsymbol{\hat{x}}_1 ~~ \boldsymbol{\hat{x}}_2 ~~ \cdots ~~ \boldsymbol{\hat{x}}_m
     \end{bmatrix}^{T}
     = \text{estimated states}
 \end{equation}
@@ -516,7 +517,7 @@ $$
 \begin{equation}
     \boldsymbol{{e}} =
     \begin{bmatrix}
-        \boldsymbol{e}_1 ~~ \boldsymbol{e}_2 ~~ \hdots ~~ \boldsymbol{e}_m
+        \boldsymbol{e}_1 ~~ \boldsymbol{e}_2 ~~ \cdots ~~ \boldsymbol{e}_m
     \end{bmatrix}^{T}
     = \text{residual errors}
 \end{equation}
@@ -530,7 +531,7 @@ $$
     \begin{bmatrix}
         \boldsymbol{H}_{\hat{x}_{1}}\boldsymbol{\Phi}(t_1,t_c) ~~
         \boldsymbol{H}_{\hat{x}_{2}}\boldsymbol{\Phi}(t_2,t_c) ~~
-        \hdots
+        \cdots
     \end{bmatrix}^{T}
 \end{equation}
 $$
@@ -569,8 +570,8 @@ $$
 \begin{equation}
     \boldsymbol{W} = 
     \begin{bmatrix}
-        \boldsymbol{P}_{vv,1} & \boldsymbol{0} & \hdots \\
-        \boldsymbol{0} & \boldsymbol{P}_{vv,2} & \hdots \\
+        \boldsymbol{P}_{vv,1} & \boldsymbol{0} & \cdots \\
+        \boldsymbol{0} & \boldsymbol{P}_{vv,2} & \cdots \\
         \vdots & \vdots & \ddots
     \end{bmatrix}^{-1}
 \end{equation}
