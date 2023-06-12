@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Estimation of Dynamical Systems"
+title:  "Estimation of Dynamic Systems"
 date:   2023-5-1
 excerpt: "Summary of estimation algorithms with examples"
 project: true
@@ -10,7 +10,10 @@ tag:
 comments: true
 ---
 
----> paragraph about course, and what was covered
+This spring semester, I took AERO 626, Estimation of Dynamic Systems, taught by professor Kyle DeMars. It was a very enjoyable course, and helped nail home the fundamental theory behind a wide class of filters. List all of them below. Explain why estimation is useful and fun
+
+-> give example of rigid body spacecraft
+-> example used throughout the derivations that follow
 
 ## Estimation Algorithms
 
@@ -501,7 +504,7 @@ $$
     \boldsymbol{e}_k = \boldsymbol{z}_k - \hat{\boldsymbol{z}}_k
 \end{equation}
 $$
-    
+
 This process can be done for all measurements, where the number of measurements equal $m$, and the results are stacked as,
 $$
 \begin{equation}
