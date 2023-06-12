@@ -10,14 +10,16 @@ tag:
 comments: true
 ---
 
-The EKF is a universal method to estimate the state of nonlinear systems, based on utilizing a first-order Taylor series expansion to linearize the dynamics and measurement functions about the estimate of the current state. The basic procedure of an EKF implementation can be boiled down to two main steps: 1) propagation of the mean and covariance and 2) updating the current mean and covariance estimates \cite{DeMarsNotes}.
+The EKF is a universal method to estimate the state of nonlinear systems, based on utilizing a first-order Taylor series expansion to linearize the dynamics and measurement functions about the estimate of the current state. The basic procedure of an EKF implementation can be boiled down to two main steps: 1) propagation of the mean and covariance and 2) updating the current mean and covariance estimates.
 
-Consider the general case of a nonlinear system model governed by 
+Consider the general case of a nonlinear system model governed by
+
 $$
 \begin{equation}
     \boldsymbol{\dot{x}}(t) = \boldsymbol{f}(\boldsymbol{x}(t), \boldsymbol{w}(t))
 \end{equation}
 $$
+
 $$
 \begin{equation}
     \boldsymbol{z}_k = \boldsymbol{h}(\boldsymbol{x}_k,\boldsymbol{v}_k)
@@ -29,18 +31,18 @@ where $$\boldsymbol{x}(t)$$ is the state of the system at time $$\textit{t}$$ an
 To begin the estimation process using an EKF, an initial estimate for the mean and covariance of the state is required, denoted $$\boldsymbol{m}_{x,k-1}$$ and $$\boldsymbol{P}_{xx,k-1}$$ respectively. For the propagation phase, the mean and covariance estimates are propagated according to
 
 $$
-    \begin{equation}
-        \boldsymbol{\dot{m}}_x(t) = \boldsymbol{f}(\boldsymbol{m}_x(t),\boldsymbol{0}_\textit{w})
-    \end{equation}
-
-\newline
-
-    \begin{equation}
-        \boldsymbol{\dot{P}}_{xx}(t) = \boldsymbol{F}_{x}(\boldsymbol{m}_x(t))\boldsymbol{P}_{xx}(t) + \boldsymbol{P}_{xx}(t)\boldsymbol{F}^{T}_{x}(\boldsymbol{m}_x(t)) + \boldsymbol{F}_{\textit{w}}(\boldsymbol{m}_x(t))\boldsymbol{Q}_{\textit{ww}}\boldsymbol{F}^{T}_{\textit{w}}(\boldsymbol{m}_x(t))
-    \end{equation}
+\begin{equation}
+    \boldsymbol{\dot{m}}_x(t) = \boldsymbol{f}(\boldsymbol{m}_x(t),\boldsymbol{0}_\textit{w})
+\end{equation}
 $$
 
- where $\boldsymbol{0}_\textit{w}$ is a \textit{w}-by-1 column vector with \textit{w} being the dimension of the process noise. Here, $\boldsymbol{F}_{x}(\boldsymbol{m}_x(t))$ is the dynamics Jacobian relative to the state (Eq.~\ref{eq:jacobianDyn}) evaluated at the mean. Similarly, $\boldsymbol{F}_{\textit{w}}(\boldsymbol{m}_x(t))$ is the dynamics Jacobian relative to the process noise, evaluated at the mean, given by 
+$$
+\begin{equation}
+    \boldsymbol{\dot{P}}_{xx}(t) = \boldsymbol{F}_{x}(\boldsymbol{m}_x(t))\boldsymbol{P}_{xx}(t) + \boldsymbol{P}_{xx}(t)\boldsymbol{F}^{T}_{x}(\boldsymbol{m}_x(t)) + \boldsymbol{F}_{\textit{w}}(\boldsymbol{m}_x(t))\boldsymbol{Q}_{\textit{ww}}\boldsymbol{F}^{T}_{\textit{w}}(\boldsymbol{m}_x(t))
+\end{equation}
+$$
+
+where $$\boldsymbol{0}_\textit{w}$$ is a $$\textit{w}-by-1$$ column vector with $$\textit{w}$$ being the dimension of the process noise. Here, $$\boldsymbol{F}_{x}(\boldsymbol{m}_x(t))$$ is the dynamics Jacobian relative to the state (Eq.~\ref{eq:jacobianDyn}) evaluated at the mean. Similarly, $$\boldsymbol{F}_{\textit{w}}(\boldsymbol{m}_x(t))$$ is the dynamics Jacobian relative to the process noise, evaluated at the mean, given by 
 
 $$
 \begin{equation}
@@ -49,53 +51,65 @@ $$
 \end{equation}
 $$
 
-The propagation of the initial state and covariance estimates from $t=t_{k-1}$ to $t=k$, results in the \textit{a priori} state estimate and covariance at time $t_k$, denoted
-\begin{subequations}
-    \begin{equation}
-        \boldsymbol{m}^{-}_{x,k} = \boldsymbol{m}_x(t_k)
-    \end{equation}
-    \begin{equation}
-        \boldsymbol{P}^{-}_{xx,k} = \boldsymbol{P}_{xx}(t_k)
-    \end{equation}
-\end{subequations}
+The propagation of the initial state and covariance estimates from $$t=t_{k-1}$$ to $$t=k$$, results in the $$\textit{a priori}$$ state estimate and covariance at time $$t_k$$, denoted
+$$
+\begin{equation}
+    \boldsymbol{m}^{-}_{x,k} = \boldsymbol{m}_x(t_k)
+\end{equation}
+$$
 
-To update the state and covariance estimates, the cross covariance and innovation covariance must be computed, which also allow the construction of the Kalman gain, a linear gain that minimizes the mean square of the \textit{a posteriori}
-state estimation error. The cross covariance, denoted $\boldsymbol{P}^{-}_{xz,k}$, and the innovation covariance, denoted $\boldsymbol{P}^{-}_{zz,k}$, are given by
+$$
+\begin{equation}
+    \boldsymbol{P}^{-}_{xx,k} = \boldsymbol{P}_{xx}(t_k)
+\end{equation}
+$$
 
-\begin{subequations}
-    \begin{equation}
-        \boldsymbol{P}^{-}_{xz,k} = 
-        \boldsymbol{P}^{-}_{xx,k}\boldsymbol{H}^{T}_x(\boldsymbol{m}^{-}_{x,k})
-    \end{equation}
-    \begin{equation}
-        \boldsymbol{P}^{-}_{zz,k} = \boldsymbol{H}_{x}(\boldsymbol{m}^{-}_{x,k})\boldsymbol{P}^{-}_{xx,k}\boldsymbol{H}^{T}_x(\boldsymbol{m}^{-}_{x,k}) + \boldsymbol{H}_{v}(\boldsymbol{m}^{-}_{x,k})\boldsymbol{P}_{vv,k}\boldsymbol{H}^{T}_{v}(\boldsymbol{m}^{-}_{x,k})
-    \end{equation}
-\end{subequations}
+To update the state and covariance estimates, the cross covariance and innovation covariance must be computed, which also allow the construction of the Kalman gain, a linear gain that minimizes the mean square of the $$\textit{a posteriori}$$ state estimation error. The cross covariance, denoted $$\boldsymbol{P}^{-}_{xz,k}$, and the innovation covariance, denoted $$\boldsymbol{P}^{-}_{zz,k}$$, are given by
 
-Here $\boldsymbol{H}_x$ is the measurement Jacobian relative to the state (Eq.~\ref{eq:jacobianMeas}), $\boldsymbol{H}_v$ is the measurement Jacobian relative to the noise and $\boldsymbol{P}_{vv,k}$ is the measurement noise covariance. For this study, $\boldsymbol{P}_{vv,k} = \boldsymbol{\Sigma_v}$.
+$$
+\begin{equation}
+    \boldsymbol{P}^{-}_{xz,k} = 
+    \boldsymbol{P}^{-}_{xx,k}\boldsymbol{H}^{T}_x(\boldsymbol{m}^{-}_{x,k})
+\end{equation}
+$$
 
-The Kalman gain, $\boldsymbol{K}_k$, is then given by
+$$
+\begin{equation}
+    \boldsymbol{P}^{-}_{zz,k} = \boldsymbol{H}_{x}(\boldsymbol{m}^{-}_{x,k})\boldsymbol{P}^{-}_{xx,k}\boldsymbol{H}^{T}_x(\boldsymbol{m}^{-}_{x,k}) + \boldsymbol{H}_{v}(\boldsymbol{m}^{-}_{x,k})\boldsymbol{P}_{vv,k}\boldsymbol{H}^{T}_{v}(\boldsymbol{m}^{-}_{x,k})
+\end{equation}
+$$
 
+Here $$\boldsymbol{H}_x$$ is the measurement Jacobian relative to the state (Eq.~\ref{eq:jacobianMeas}), $$\boldsymbol{H}_v$$ is the measurement Jacobian relative to the noise and $$\boldsymbol{P}_{vv,k}$$ is the measurement noise covariance. For this study, $$\boldsymbol{P}_{vv,k} = \boldsymbol{\Sigma_v}$$.
+
+The Kalman gain, $$\boldsymbol{K}_k$$, is then given by
+
+$$
 \begin{equation}
     \boldsymbol{K}_k = \boldsymbol{P}^{-}_{xz,k}(\boldsymbol{P}^{-}_{zz,k})^{-1}
 \end{equation}
+$$
 
-Penultimately, using the previously defined measurement function, $\boldsymbol{h}(\boldsymbol{x}_k,\boldsymbol{v}_k)$, the expected measurement is computed based on the \textit{a priori} state, $\boldsymbol{m}^{-}_{x,k}$ as 
+Penultimately, using the previously defined measurement function, $$\boldsymbol{h}(\boldsymbol{x}_k,\boldsymbol{v}_k)$$, the expected measurement is computed based on the $$\textit{a priori}$$ state, $$\boldsymbol{m}^{-}_{x,k}$$ as 
 
+$$
 \begin{equation}
     \boldsymbol{m}^{-}_{z,k} = \boldsymbol{h}(\boldsymbol{m}^{-}_{x,k},\boldsymbol{0}_v)
 \end{equation}
+$$
 
-where $\boldsymbol{0}_v$ is a \textit{v}-by-1 column vector with \textit{v} being the dimension of the measurement noise. Finally, with the expected measurement, cross and innovation covariances, and the Kalman gain, the update step can be performed. The state and covariance estimates are updated as
+where $$\boldsymbol{0}_v$$ is a $$\textit{v}-by-1$$ column vector with $$\textit{v}$$ being the dimension of the measurement noise. Finally, with the expected measurement, cross and innovation covariances, and the Kalman gain, the update step can be performed. The state and covariance estimates are updated as
 
-\begin{subequations}
-    \begin{equation}
-        \boldsymbol{m}^{+}_{x,k} = \boldsymbol{m}^{-}_{x,k} + \boldsymbol{K}_k[\boldsymbol{z}_k - \boldsymbol{m}^{-}_{z,k}]
-    \end{equation}
-    \begin{equation}
-        \boldsymbol{P}^{+}_{xx,k} = \boldsymbol{P}^{-}_{xx,k} - \boldsymbol{P}^{-}_{xz,k}\boldsymbol{K}^{T}_k - \boldsymbol{K}_k(\boldsymbol{P}^{-}_{xz,k})^{T} + \boldsymbol{K}_k\boldsymbol{P}^{-}_{zz,k}\boldsymbol{K}^{T}_k
-    \end{equation}
-\end{subequations}
+$$
+\begin{equation}
+    \boldsymbol{m}^{+}_{x,k} = \boldsymbol{m}^{-}_{x,k} + \boldsymbol{K}_k[\boldsymbol{z}_k - \boldsymbol{m}^{-}_{z,k}]
+\end{equation}
+$$
+
+$$
+\begin{equation}
+    \boldsymbol{P}^{+}_{xx,k} = \boldsymbol{P}^{-}_{xx,k} - \boldsymbol{P}^{-}_{xz,k}\boldsymbol{K}^{T}_k - \boldsymbol{K}_k(\boldsymbol{P}^{-}_{xz,k})^{T} + \boldsymbol{K}_k\boldsymbol{P}^{-}_{zz,k}\boldsymbol{K}^{T}_k
+\end{equation}
+$$
 
 The updated mean and covariance estimates are then used as the initial conditions for the propagation phase of the next iteration, and this process continues until all the measurements are utilized. 
 
