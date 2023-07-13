@@ -4,9 +4,10 @@ title: About Me
 date: 2016-03-21
 comments: false
 ---
-Welcome! 
 
-## About Me
+## Intro
+
+Welcome! 
 
 My name is David van Wijk and I am a third year PhD student in the Aerospace Engineering Department at Texas A&M University in the Land, Air and Space Robotics (<a style="color:blue" href="https://lasr.tamu.edu/"><u>LASR</u></a>) Laboratory led by Professor Manoranjan Majji. I am working on safe autonomy for autonomous rendezvous, proximity operations, and docking (ARPOD) scenarios, in tandem with reinforcement learning (RL). Broadly, I am interested in robotics, autonomous systems, and reinforcement learning (RL).
 
