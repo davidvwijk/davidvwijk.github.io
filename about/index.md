@@ -5,7 +5,7 @@ date: 2016-03-21
 comments: false
 ---
 
-## Intro
+<!-- ## Intro -->
 
 Welcome! 
 
@@ -19,7 +19,8 @@ In the summer of 2020, I worked with the mechanical engineering team at Northrop
 
 On a different note, I grew up in upstate New York in an international household, so I speak Italian fluently and can hold my own in Spanish. I enjoy playing soccer, reading science fiction and cooking.
 
-## Affiliations
+## Affiliations:
+
 
 <figure>
   <img src="/assets/img/LASR.png" width="466" height = "100%" alt="LASR logo">
