@@ -19,7 +19,19 @@ In the summer of 2020, I worked with the mechanical engineering team at Northrop
 
 On a different note, I grew up in upstate New York in an international household, so I speak Italian fluently and can hold my own in Spanish. I enjoy playing soccer, reading science fiction and cooking.
 
+<hr>
+
+## Recent Awards:
+
+<ul>
+  <li> <b>AERO Graduate Excellence Fellowship Award:</b> Fall 2022, Fall 2023. Merit based fellowship to support graduate student education at Texas A&M University, Aerospace  Engineering. This is a competitive fellowship open to all qualified students. Award determined by the TAMU-AERO Graduate Program Committee. </li>
+  <li> <b>Engineering Graduate Merit Doctoral Fellowship:</b> Fall 2021. This highly competitive fellowship is awarded to one student for each participating department per year (department of Aerospace Engineering in this case). </li>
+</ul>
+
+<hr>
+
 ## Affiliations:
+
 
 
 <figure>
