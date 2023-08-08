@@ -19,7 +19,7 @@ comments: false
   </div>
 </div> -->
 
-<div class="container">
+<!-- <div class="container">
       <div class="image">
         <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
           <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
@@ -31,7 +31,7 @@ comments: false
 </div>
 
 <br>
-<br>
+<br> -->
 
 <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
     <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
