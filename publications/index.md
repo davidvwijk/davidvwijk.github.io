@@ -22,7 +22,7 @@ comments: false
 <div class="container">
       <div class="image">
         <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
-          <img alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
+          <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
         </a>
       </div>
       <div class="text">
