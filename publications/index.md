@@ -22,13 +22,16 @@ comments: false
 <div class="container">
       <div class="image">
         <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
-          <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
+          <img alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
         </a>
       </div>
       <div class="text">
-        <h3>    Google Scholar Profile.</h3>
+        <h2> <a href="https://ieeexplore.ieee.org/document/9893394">  Google Scholar Profile.</a> </h2>
       </div>
 </div>
+
+<br>
+<br>
 
 <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
     <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
