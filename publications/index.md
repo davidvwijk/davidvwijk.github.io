@@ -26,7 +26,7 @@ comments: false
         </a>
       </div>
       <div class="text">
-        <h1>Google Scholar Profile.</h1>
+        <h3>    Google Scholar Profile.</h3>
       </div>
 </div>
 
