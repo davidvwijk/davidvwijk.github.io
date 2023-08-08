@@ -19,6 +19,17 @@ comments: false
   </div>
 </div> -->
 
+<div class="container">
+      <div class="image">
+        <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
+          <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
+        </a>
+      </div>
+      <div class="text">
+        <h1>Google Scholar Profile.</h1>
+      </div>
+</div>
+
 <a href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao">
     <img align='left' alt="Google Scholar link" src="/assets/img/googleScholar_logo.png">
 </a>
