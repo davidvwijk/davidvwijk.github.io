@@ -57,9 +57,9 @@ comments: false
 
 <ol>
 
-<li> [Accepted] <b>D. van Wijk</b>, K. Dunlap, K. L. Hobbs, and M. Majji, “Deep Reinforcement Learning for Autonomous Spacecraft Inspection using Illumination,” <em> 2023 AAS/AIAA Astrodynamics Specialist Conference</em>, Big Sky, Montana, USA, 13-17 August 2023. Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2308.02743.pdf"><u>link</u></a>] </li>
+<li> <b>D. van Wijk</b>, K. Dunlap, K. L. Hobbs, and M. Majji, “Deep Reinforcement Learning for Autonomous Spacecraft Inspection using Illumination,” <em> 2023 AAS/AIAA Astrodynamics Specialist Conference</em>, Big Sky, Montana, USA, 13-17 August 2023. Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2308.02743.pdf"><u>link</u></a>] </li>
 
-<li> [Accepted] K. Dunlap, <b>D. van Wijk</b>, and K. L. Hobbs, “Run Time Assurance for Autonomous Spacecraft Inspection,” <em> 2023 AAS/AIAA Astrodynamics Specialist Conference</em>, Big Sky, Montana, USA, 13-17 August 2023. Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2302.02885.pdf"><u>link</u></a>] </li>
+<li> K. Dunlap, <b>D. van Wijk</b>, and K. L. Hobbs, “Run Time Assurance for Autonomous Spacecraft Inspection,” <em> 2023 AAS/AIAA Astrodynamics Specialist Conference</em>, Big Sky, Montana, USA, 13-17 August 2023. Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2302.02885.pdf"><u>link</u></a>] </li>
 
 <li> <b>D. van Wijk</b>, K. Eves, and J. Valasek, "Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target", <em> AIAA Scitech 2023 Forum</em>, 2023. 
 [<a style="color:blue" href="https://arc.aiaa.org/doi/10.2514/6.2023-0128"><u>link</u></a>] </li>
