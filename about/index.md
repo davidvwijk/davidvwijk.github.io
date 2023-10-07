@@ -9,8 +9,7 @@ comments: false
 
 Welcome! 
 
-My name is David van Wijk and I am a third year PhD student in the Aerospace Engineering Department at Texas A&M University in the Land, Air and Space Robotics (<a style="color:blue" href="https://lasr.tamu.edu/"><u>LASR</u></a>) Laboratory led by Professor Manoranjan Majji. Currently, my main research interest is in safe autonomy using control barrier functions for robotics applications. I have done work in safe autonomy for autonomous rendezvous, proximity operations, and docking (ARPOD) scenarios, in tandem with Reinforcement Learning (RL). For a full list of publications, please see my <a style="color:blue" href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao"
-><u>google scholar.</u></a>
+My name is David van Wijk and I am a third year PhD student in the Aerospace Engineering Department at Texas A&M University in the Land, Air and Space Robotics (<a style="color:blue" href="https://lasr.tamu.edu/"><u>LASR</u></a>) Laboratory led by Professor Manoranjan Majji. Currently, my main research interest is in safe autonomy using control barrier functions for robotics applications. I have done work in safe autonomy for autonomous rendezvous, proximity operations, and docking (ARPOD) scenarios, in tandem with Reinforcement Learning (RL). For a full list of publications, please see my <a style="color:blue" href="https://scholar.google.com/citations?user=7ujEtCUAAAAJ&hl=en&oi=ao"><u>google scholar.</u></a>
 
 Since Fall 2022, I've been funded through a fellowship with the Air Force Research Laboratory in the Safe Autonomy group, led by Dr. Kerianne Hobbs. The safe autonomy group seeks to develop solutions that allow safe learning-enabled control on USAF and USSF aerospace systems. The group mainly uses run time assurance methods in order to monitor RL/ML policies and determine when to intervene, and with what action, to ensure safety of the controller and the overall system.
 
