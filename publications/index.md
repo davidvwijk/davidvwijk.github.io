@@ -69,7 +69,7 @@ comments: false
 </ol>
 
 ## Other Papers
-</ol>
+<ol>
 
 <li> <b>D. van Wijk</b> “Stochastic Control Barrier Functions for Economics” [<a style="color:blue" href="https://arxiv.org/abs/2312.12612"><u>link</u></a>] </li>
 
