@@ -5,4 +5,4 @@ gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem 'jekyll-mentions'
 gem 'jekyll-feed'
-gem "github-pages", "=228"
+gem "jekyll", "=3.9.3"
