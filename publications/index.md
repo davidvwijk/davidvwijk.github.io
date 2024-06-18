@@ -57,6 +57,8 @@ comments: false
 
 <ol>
 
+<li> K. Dunlap, K. Bennett, <b>D. van Wijk</b>, N. Hamilton, K. L. Hobbs, “Run Time Assured Reinforcement Learning for Six Degree-of-Freedom Spacecraft Inspection,” 2024. Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2406.11795"><u>link</u></a>] </li>
+
 <li> <b>D. van Wijk</b>, I. Down, and M. Majji, “On-Manifold Collision Avoidance using Tori Parametrization and Control Barrier Functions,” <em> 2024 Rocky Mountain AAS GN&C Conference</em>, Breckenridge, Colorado, USA, 1-7 February 2024. </li>
 <!-- Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2308.02743.pdf"><u>link</u></a>] -->
 
