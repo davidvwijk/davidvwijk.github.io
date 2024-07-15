@@ -50,6 +50,7 @@ comments: false
 ## Journal Papers
 
 <ol>
+<li> <b>D. van Wijk</b>, K. Dunlap, M. Majji, and K. L. Hobbs, "Safe Spacecraft Inspection via Deep Reinforcement Learning and Discrete Control Barrier Functions" <em> AIAA Journal of Aerospace Information Systems (JAIS)</em>, 2023 (To appear).</li>
 <li> J. Gemerek, B. Fu, Y. Chen, Z. Liu, M. Zheng, <b>D. van Wijk</b>, S. Ferrari, "Directional Sensor Planning for Occlusion Avoidance", <em> IEEE Transactions on Robotics (T-RO)</em>, 2022. [<a style="color:blue" href="https://ieeexplore.ieee.org/document/9893394"><u>link</u></a>] </li>
 </ol>
 
@@ -64,7 +65,7 @@ comments: false
 
 <li> <b>D. van Wijk</b>, M. Majji, and K. L. Hobbs, “Fault Tolerant Run Time Assurance with Control Barrier Functions for Rigid Body Spacecraft Rotation,” <em> AIAA Scitech 2024 Forum</em>, Orlando, Florida, USA, 7-12 January 2024. [<a style="color:blue" href="https://arc.aiaa.org/doi/abs/10.2514/6.2024-0991"><u>link</u></a>] </li>
 
-<li> <b>D. van Wijk</b>, K. Dunlap, K. L. Hobbs, and M. Majji, “Deep Reinforcement Learning for Autonomous Spacecraft Inspection using Illumination,” <em> 2023 AAS/AIAA Astrodynamics Specialist Conference</em>, Big Sky, Montana, USA, 13-17 August 2023. Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2308.02743.pdf"><u>link</u></a>] </li>
+<li> <b>D. van Wijk</b>, K. Dunlap, M. Majji, and K. L. Hobbs, “Deep Reinforcement Learning for Autonomous Spacecraft Inspection using Illumination,” <em> 2023 AAS/AIAA Astrodynamics Specialist Conference</em>, Big Sky, Montana, USA, 13-17 August 2023. Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2308.02743.pdf"><u>link</u></a>] </li>
 
 <li> K. Dunlap, <b>D. van Wijk</b>, and K. L. Hobbs, “Run Time Assurance for Autonomous Spacecraft Inspection,” <em> 2023 AAS/AIAA Astrodynamics Specialist Conference</em>, Big Sky, Montana, USA, 13-17 August 2023. Preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2302.02885.pdf"><u>link</u></a>] </li>
 
