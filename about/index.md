@@ -17,7 +17,7 @@ I graduated Magna Cum Laude in May of 2021 from Cornell University with a B.S. i
 
 In the summer of 2020, I worked with the mechanical engineering team at Northrop Grumman Remotec (Clinton, TN) on the design, analysis, and documentation of mechanical components for their hazardous duty robotic vehicles. Primarily using Autodesk Inventor, I was given a lot of creative freedom to design mechanical parts in order to satisfy requirements for the newest prototype of their medium weight Unmanned Ground Vehicle (UGV). I love watching my mechanical designs come to life, and this experience really solidified my interest in robotics.
 
-On a different note, I grew up in upstate New York in an international household, so I speak Italian fluently and can hold my own in Spanish. I enjoy playing hiking, reading science fiction and cooking.
+On a different note, I grew up in upstate New York in an international household, so I speak Italian fluently and can hold my own in Spanish. I enjoy hiking, reading science fiction and cooking.
 
 <hr>
 
