@@ -58,7 +58,7 @@ comments: false
 
 <ol>
 
-<li> K. Dunlap, K. Bennett, <b>D. van Wijk</b>, N. Hamilton, K. L. Hobbs, “Run Time Assured Reinforcement Learning for Six Degree-of-Freedom Spacecraft Inspection,”  AIAA ASCEND 2024. July 2024. [<a style="color:blue" href="https://arc.aiaa.org/doi/10.2514/6.2024-4935"><u>link</u></a>]
+<li> K. Dunlap, K. Bennett, <b>D. van Wijk</b>, N. Hamilton, K. L. Hobbs, “Run Time Assured Reinforcement Learning for Six Degree-of-Freedom Spacecraft Inspection,”  AIAA ASCEND 2024. July 2024. [<a style="color:blue" href="https://arc.aiaa.org/doi/10.2514/6.2024-4935"><u>link</u></a>] </li>
 <!-- arXiv preprint: [<a style="color:blue" href="https://arxiv.org/pdf/2406.11795"><u>link</u></a>] </li> -->
 
 <li> <b>D. van Wijk</b>, I. Down, and M. Majji, “On-Manifold Collision Avoidance using Tori Parametrization and Control Barrier Functions,” <em> 2024 Rocky Mountain AAS GN&C Conference</em>, Breckenridge, Colorado, USA, 1-7 February 2024. </li>
@@ -76,6 +76,7 @@ comments: false
 </ol>
 
 ## Other Papers
+
 <ol>
 
 <li> <b>D. van Wijk</b> “Stochastic Control Barrier Functions for Economics,” 2023. [<a style="color:blue" href="https://arxiv.org/abs/2312.12612"><u>link</u></a>] </li>
