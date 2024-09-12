@@ -50,7 +50,7 @@ comments: false
 ## Journal Papers
 
 <ol>
-<li> <b>D. van Wijk</b>, K. Dunlap, M. Majji, and K. L. Hobbs, "Safe Spacecraft Inspection via Deep Reinforcement Learning and Discrete Control Barrier Functions", <em> AIAA Journal of Aerospace Information Systems (JAIS)</em>, 2024. [<a style="color:blue" href="https://arc.aiaa.org/doi/10.2514/1.I011391"><u>link</u></a>]. </li>
+<li> <b>D. van Wijk</b>, K. Dunlap, M. Majji, and K. L. Hobbs, "Safe Spacecraft Inspection via Deep Reinforcement Learning and Discrete Control Barrier Functions", <em> AIAA Journal of Aerospace Information Systems (JAIS)</em>, 2024. [<a style="color:blue" href="https://arc.aiaa.org/doi/10.2514/1.I011391"><u>link</u></a>] </li>
 <li> J. Gemerek, B. Fu, Y. Chen, Z. Liu, M. Zheng, <b>D. van Wijk</b>, S. Ferrari, "Directional Sensor Planning for Occlusion Avoidance", <em> IEEE Transactions on Robotics (T-RO)</em>, 2022. [<a style="color:blue" href="https://ieeexplore.ieee.org/document/9893394"><u>link</u></a>] </li>
 </ol>
 
