@@ -87,7 +87,7 @@ comments: false
 
 <ol>
 
-<li> <b>D. van Wijk</b> “Stochastic Control Barrier Functions for Economics,” 2023. [<a style="color:blue" href="https://arxiv.org/abs/2312.12612"><u>link</u></a>] </li>
+<li> <b>D. van Wijk</b>, “Stochastic Control Barrier Functions for Economics,” 2023. [<a style="color:blue" href="https://arxiv.org/abs/2312.12612"><u>link</u></a>] </li>
 
 </ol>
 
