@@ -51,7 +51,7 @@ comments: false
 
 <ol>
 <li> <b>D. van Wijk</b>, S. Coogan, T. G. Molnar, M. Majji, and K. L. Hobbs, "Disturbance-Robust Backup Control Barrier Functions: Safety Under
-  Uncertain Dynamics", <em> Submitted to IEEE Control Systems Letters (L-CSS) with ACC option.</em> 2024. Preprint: [<a style="color:blue" href="https://arxiv.org/abs/2409.07700#:~:text=Disturbance%2DRobust%20Backup%20Control%20Barrier%20Functions%3A%20Safety%20Under%20Uncertain%20Dynamics,-David%20E.J.%20van&text=Obtaining%20a%20controlled%20invariant%20set,complex%20nonlinear%20systems%20and%20constraints."><u>link</u></a>] 
+  Uncertain Dynamics", <em> Submitted to IEEE Control Systems Letters (L-CSS) with ACC option.</em> 2024. Preprint: [<a style="color:blue" href="https://arxiv.org/abs/2409.07700#"><u>link</u></a>] 
 </li>
 </ol>
 
