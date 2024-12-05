@@ -1,0 +1,13 @@
+- id: EconCBF
+  title: "Stochastic Control Barrier Functions for Economics"
+  venue: arXiv Preprint, 2023
+  description: "Stochastic control barrier functions and stochastic optimal control applied to classical economics problems."
+  arxiv: '2312.12612'
+  github: davidvwijk/EconCBF
+  # link: 
+  image: econCBF.png
+  # image_mouseover: 
+  authors:
+    - dvw
+  # awards:
+    # - "Oral Presentation"

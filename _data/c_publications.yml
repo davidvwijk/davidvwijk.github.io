@@ -1,0 +1,93 @@
+- id: 6DOFascend
+  title: "Run Time Assured Reinforcement Learning for Six Degree-of-Freedom Spacecraft Inspection"
+  venue: AIAA ASCEND, 2024
+  description: "RTA-enhanced RL training for 6-DOF spacecraft inspection, enforcing safety via control barrier functions and analyzing trade-offs in performance and safety."
+  arxiv: '2406.11795'
+  link: https://arc.aiaa.org/doi/10.2514/6.2024-4935
+  # github: 
+  image: 6dof_ascend.png
+  # image_mouseover: DR-bCBF24.mp4
+  authors:
+    - kdunlap
+    - kbennett
+    - dvw 
+    - nhamilton
+    - khobbs
+  # awards:
+    # - "Oral Presentation"
+- id: gnc24
+  title: "On-Manifold Collision Avoidance using Tori Parametrization and Control Barrier Functions"
+  venue: Rocky Mountain AAS GN&C Conference, 2024
+  description: "Collision mitigation for low-thrust spacecraft in a quasi-periodic orbit using high order control barrier functions."
+  # arxiv: '2406.11795'
+  # link: https://arc.aiaa.org/doi/10.2514/6.2024-4935
+  # github: 
+  image: invariantCurve.png
+  # image_mouseover: DR-bCBF24.mp4
+  authors:
+    - dvw
+    - idown 
+    - mmajji
+  awards:
+    - "Oral Presentation"
+- id: ftrta24
+  title: "Fault Tolerant Run Time Assurance with Control Barrier Functions for Rigid Body Spacecraft Rotation"
+  venue:  AIAA Scitech Forum, 2024
+  description: "Safety-critical spacecraft control in the presence of faults and rapidly variable dynamics using sequential estimation and control barrier functions."
+  # arxiv: '2406.11795'
+  link: https://arc.aiaa.org/doi/abs/10.2514/6.2024-0991
+  # github: 
+  image: ft_rta.png
+  # image_mouseover: DR-bCBF24.mp4
+  authors:
+    - dvw
+    - mmajji 
+    - khobbs
+  awards:
+    - "Oral Presentation"
+- id: aas23
+  title: "Deep Reinforcement Learning for Autonomous Spacecraft Inspection using Illumination"
+  venue:  AAS/AIAA Astrodynamics Specialist Conference, 2023
+  description: "RL-based control for on-orbit spacecraft inspection, optimizing illumination and evaluating performance with statistically robust metrics."
+  arxiv: '2308.02743'
+  # link: https://arc.aiaa.org/doi/abs/10.2514/6.2024-0991
+  # github: 
+  image: aas23_2.png
+  # image_mouseover: DR-bCBF24.mp4
+  authors:
+    - dvw
+    - kdunlap
+    - mmajji 
+    - khobbs
+  awards:
+    - "Oral Presentation"
+- id: aas23_rta
+  title: "Run Time Assurance for Autonomous Spacecraft Inspection"
+  venue:  AAS/AIAA Astrodynamics Specialist Conference, 2023
+  description: "Development of spacecraft constraints for multi-agent inspection mission, enforced using control barrier functions."
+  arxiv: '2302.02885'
+  # link: https://arc.aiaa.org/doi/abs/10.2514/6.2024-0991
+  # github: 
+  image: aas23_rta.png
+  # image_mouseover: DR-bCBF24.mp4
+  authors:
+    - kdunlap
+    - dvw
+    - khobbs
+  # awards:
+  #   - "Oral Presentation"
+- id: trackingRL
+  title: "Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target"
+  venue:  AIAA Scitech Forum, 2023
+  description: "RL-based control for multirotor tracking of maneuvering ground targets using a fixed optical sensor, addressing occlusions and target motion types in simulation."
+  # arxiv: '2308.02743'
+  link: https://arc.aiaa.org/doi/10.2514/6.2023-0128
+  # github: 
+  image: rtd2.png
+  # image_mouseover: DR-bCBF24.mp4
+  authors:
+    - dvw
+    - keves
+    - jvalasek
+  awards:
+    - "Oral Presentation"

@@ -18,24 +18,29 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Keunhong Park
-name: Keunhong Park
-position: Research Scientist 
-email: dp9jalxhq@mozmail.com
+title: David van Wijk
+name: David van Wijk
+position: PhD Candidate
+email: davidvanwijk@tamu.edu
 description: >-
-  Building [World Labs](https://www.worldlabs.ai/about), zero to one.
+  I am an Aerospace Ph.D. Candidate in the <a href="https://lasr.tamu.edu/">Land, Air and Space Robotics Laboratory</a> at Texas A&M University passionate about developing <b>provably safe control algorithms for autonomous systems</b>.
+  My research focuses on robotic and spacecraft applications, where I leverage insights from control theory, optimization, and estimation to enhance the reliability of autonomous operations in complex environments.
+  
+  <hr>
 
-  I am a researcher in 3D computer vision, generative models, and computer graphics. I was previously a research scientist at [Google](https://ai.google/research/).
+    <b>Texas A&M University</b> <br>
+    <em>Ph.D. Aerospace Engineering</em>, (2021 - Expected 2025) <br>
 
-  I received my Ph.D from the [University of Washington](https://grail.cs.washington.edu/) in 2021 where I was advised by
-  [Ali Farhadi](https://homes.cs.washington.edu/~ali/) and
-  [Steve Seitz](https://homes.cs.washington.edu/~seitz/).
+    <b>Cornell University</b> <br>
+    <em>B.S. Mechanical and Aerospace Engineering</em>, (2017 - 2021)
+    
+  <p>
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://keunhong.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: KeunhongP
-github_username: keunhong
-google_scholar: HVZb-5oAAAAJ
-google_analytics: G-MFWSBLRKG0
+url: "https://davidvwijk.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: davidvwijk
+google_scholar: 7ujEtCUAAAAJ&hl
+# google_analytics: G-MFWSBLRKG0
 
 # Build settings
 theme: minima
