@@ -64,6 +64,11 @@ layout: null
                 <span>Scholar</span>
               </a>
 
+              <a class="external-link button is-light" href="https://orcid.org/{{ site.orcid_id }}">
+                <span class="icon"><i class="fab fa-orcid"></i></span>
+                <span>Orcid</span>
+              </a>
+
               <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
                 <span class="icon"><i class="fab fa-github"></i></span>
                 <span>Github</span>
@@ -106,7 +111,7 @@ layout: null
           {% endfor %}
         </ul>
       </div>-->
-
+      {% if site.data.ur_publications %}
       <h2 class="title is-3">Under Review</h2>
 
       {% for publication in site.data.ur_publications %}
@@ -186,6 +191,7 @@ layout: null
         </div>
       </div>
       {% endfor %}
+      {% endif %}
 
       <h2 class="title is-3">Journal Publications</h2>
 

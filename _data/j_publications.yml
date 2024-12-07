@@ -1,3 +1,20 @@
+- id: DR-bCBF24
+  title: "Disturbance-Robust Backup Control Barrier Functions: Safety Under Uncertain Dynamics"
+  venue: IEEE Control Systems Letters (L-CSS) with ACC option, 2024 (to appear)
+  description: "Novel class of CBFs for online controlled invariance of systems with input constraints and unmodelled dynamics disturbances."
+  arxiv: '2409.07700'
+  github: davidvwijk/DR-bCBF
+  # link: 
+  image: DR-bCBF24.png
+  image_mouseover: DR-bCBF24.mp4
+  authors:
+    - dvw
+    - scoogan
+    - tmolnar
+    - mmajji
+    - khobbs
+  # awards:
+    # - "Oral Presentation"
 - id: isamGNC24
   title: "Autonomous Satellite Servicing Infrastructure for In-Space Assembly and Manufacturing"
   venue: ASME Journal of Manufacturing Science and Engineering, 2024 (to appear)
