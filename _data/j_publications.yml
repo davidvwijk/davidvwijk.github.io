@@ -4,7 +4,7 @@
   description: "Novel class of CBFs for online controlled invariance of systems with input constraints and unmodelled dynamics disturbances."
   arxiv: '2409.07700'
   github: davidvwijk/DR-bCBF
-  # link: 
+  link: https://ieeexplore.ieee.org/document/10787250
   image: DR-bCBF24.png
   image_mouseover: DR-bCBF24.mp4
   authors:
