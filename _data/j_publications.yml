@@ -20,6 +20,7 @@
   venue: ASME Journal of Manufacturing Science and Engineering, 2024 (to appear)
   description: "Closed-loop GNC framework for spacecraft servicing module deployment, optimizing low-thrust trajectories while addressing state constraints and impact uncertainty."
   image: isam_gnc_24.png
+  link: https://asmedigitalcollection.asme.org/manufacturingscience/article/doi/10.1115/1.4067447/1210431/Autonomous-Satellite-Servicing-Infrastructure-for
   # image_mouseover: xx.mp4
   authors:
     - idown
