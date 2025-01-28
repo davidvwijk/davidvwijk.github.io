@@ -1,6 +1,6 @@
 - id: DR-bCBF24
   title: "Disturbance-Robust Backup Control Barrier Functions: Safety Under Uncertain Dynamics"
-  venue: IEEE Control Systems Letters (L-CSS) with ACC option, 2024
+  venue: IEEE Control Systems Letters (L-CSS), 2024
   description: "Novel class of CBFs for online controlled invariance of systems with input constraints and unmodelled dynamics disturbances."
   arxiv: '2409.07700'
   github: davidvwijk/DR-bCBF
