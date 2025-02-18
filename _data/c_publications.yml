@@ -1,3 +1,19 @@
+- id: GNC25
+  title: "Safe Multi-agent Satellite Servicing with Control Barrier Functions"
+  venue: Rocky Mountain AAS GN&C Conference, 2025
+  description: Control barrier functions and sensor fusion for safe closed-loop GNC in multi-agent satellite servicing missions.
+  arxiv: '2502.10480'
+  # link: https://arc.aiaa.org/doi/10.2514/6.2024-4935
+  # github: 
+  image: GNC25_2.png
+  # image_mouseover: DR-bCBF24.mp4
+  video: 9R6LLKYpXGs
+  authors:
+    - deep*
+    - dvw*
+    - mmajji
+  awards:
+    - "Oral Presentation"
 - id: 6DOFascend
   title: "Run Time Assured Reinforcement Learning for Six Degree-of-Freedom Spacecraft Inspection"
   venue: AIAA ASCEND, 2024
@@ -19,14 +35,10 @@
   title: "On-Manifold Collision Avoidance using Tori Parametrization and Control Barrier Functions"
   venue: Rocky Mountain AAS GN&C Conference, 2024
   description: "Collision mitigation for low-thrust spacecraft in a quasi-periodic orbit using high order control barrier functions."
-  # arxiv: '2406.11795'
-  # link: https://arc.aiaa.org/doi/10.2514/6.2024-4935
-  # github: 
   image: invariantCurve.png
-  # image_mouseover: DR-bCBF24.mp4
   authors:
-    - dvw
-    - idown 
+    - dvw*
+    - idown*
     - mmajji
   awards:
     - "Oral Presentation"
