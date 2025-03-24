@@ -76,15 +76,15 @@ jvalasek:
   first_name: John
   last_name: Valasek
   website: 
-xx:
-  first_name:
-  last_name:
-  website: 
-xx:
-  first_name:
-  last_name:
-  website:    
-xx:
-  first_name:
-  last_name:
-  website: 
+edas:
+  first_name: Ersin
+  last_name: Da&#351;
+  website: https://ersindas.github.io/
+aanil:
+  first_name: Anil
+  last_name: Alan
+  website: https://scholar.google.com.tr/citations?user=J8pUBXwAAAAJ&hl=tr
+jburdick:
+  first_name: Joel
+  last_name: Burdick
+  website: https://www.eas.caltech.edu/people/jburdick

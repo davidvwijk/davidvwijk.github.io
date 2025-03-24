@@ -1,3 +1,17 @@
+- id: CEKF25
+  title: "Controlling the Kalman Update: A Covariance Constrained Approach"
+  venue: To appear in IEEE Transactions on Aerospace and Electronic Systems (TAES), 2025
+  description: "Novel state estimation formulation for improving filter stability and statistical consistency for nonlinear systems."
+  # arxiv: '2409.07700'
+  # github: davidvwijk/DR-bCBF
+  # link: https://ieeexplore.ieee.org/document/10787250
+  image: cekf25.png
+  # image_mouseover: DR-bCBF24.mp4
+  # video: kJRBKPcA4dk
+  authors:
+    - jmcelreath
+    - dvw
+    - mmajji
 - id: DR-bCBF24
   title: "Disturbance-Robust Backup Control Barrier Functions: Safety Under Uncertain Dynamics"
   venue: IEEE Control Systems Letters (L-CSS), 2024
