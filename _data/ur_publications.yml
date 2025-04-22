@@ -1,6 +1,6 @@
 - id: DO-bCBF
   title: "Disturbance Observers for Robust Backup Control Barrier Functions"
-  venue: Submitted to IEEE Control Systems Letters (L-CSS), 2025
+  venue: Submitted to IEEE Conference on Decision and Control (CDC), 2025
   description: "Novel class of CBFs for online controlled invariance of uncertain systems with input constraints, whilst reducing conservatism via an observer." 
   arxiv: '2503.15734'
   # github: davidvwijk/DR-bCBF
