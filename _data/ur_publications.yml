@@ -3,7 +3,7 @@
   venue: Submitted to IEEE American Control Conference (ACC), 2026
   description: "Closed-form controller via optimal interpolation to ensure safety for nonlinear systems with bounded inputs." 
   arxiv: '2510.05436'
-  # github: davidvwijk/DR-bCBF
+  github: davidvwijk/OI-CBF
   # link: 
   image: hero-acc26_crop.png
   # image_mouseover: dobcbf_animation.mp4
