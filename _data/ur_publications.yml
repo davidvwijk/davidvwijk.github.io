@@ -1,3 +1,20 @@
+- id: ACC-26
+  title: "Safety-Critical Control with Bounded Inputs: A Closed-Form Solution for Backup Control Barrier Functions"
+  venue: Submitted to IEEE American Control Conference (ACC), 2026
+  description: "Closed-form controller via optimal interpolation between a nominal and backup controller to ensure safety with bounded inputs." 
+  arxiv: '2510.05436'
+  # github: davidvwijk/DR-bCBF
+  # link: 
+  image: hero-acc26_crop.png
+  # image_mouseover: dobcbf_animation.mp4
+  authors:
+    - dvw 
+    - edas
+    - tmolnar
+    - ames
+    - jburdick
+  # awards:
+    # - "Oral Presentation"
 - id: DO-bCBF
   title: "Disturbance Observers for Robust Backup Control Barrier Functions"
   venue: Submitted to IEEE Conference on Decision and Control (CDC), 2025
@@ -16,22 +33,5 @@
     - jburdick
     - mmajji
     - khobbs
-  # awards:
-    # - "Oral Presentation"
-- id: ACC-26
-  title: "Safety-Critical Control with Bounded Inputs: A Closed-Form Solution for Backup Control Barrier Functions"
-  venue: Submitted to IEEE American Control Conference (ACC), 2026
-  description: "Closed-form controller via optimal interpolation between a nominal and backup controller to ensure safety with bounded inputs." 
-  arxiv: '2510.05436'
-  # github: davidvwijk/DR-bCBF
-  # link: 
-  image: hero-acc26.png
-  # image_mouseover: dobcbf_animation.mp4
-  authors:
-    - dvw 
-    - edas
-    - tmolnar
-    - ames
-    - jburdick
   # awards:
     # - "Oral Presentation"
