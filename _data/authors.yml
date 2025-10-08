@@ -1,6 +1,6 @@
 dvw:
   first_name: David
-  middle_name: E.J.
+  middle_name: E. J.
   last_name: van Wijk
   website: https://davidvwijk.github.io/
   is_me: true
@@ -16,8 +16,12 @@ scoogan:
   first_name: Samuel
   last_name: Coogan
   website: https://coogan.ece.gatech.edu/
+ames:
+  first_name: Aaron D.
+  last_name: Ames
+  website: https://mce.caltech.edu/people/adames
 tmolnar:
-  first_name: Tamas
+  first_name: Tamas G.
   last_name: Molnar
   website: https://tamasmolnar.com/
 kdunlap:
@@ -85,6 +89,6 @@ aanil:
   last_name: Alan
   website: https://scholar.google.com.tr/citations?user=J8pUBXwAAAAJ&hl=tr
 jburdick:
-  first_name: Joel
+  first_name: Joel W.
   last_name: Burdick
   website: https://www.eas.caltech.edu/people/jburdick
