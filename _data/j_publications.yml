@@ -28,8 +28,8 @@
     - tmolnar
     - mmajji
     - khobbs
-  # awards:
-    # - "Oral Presentation"
+  awards:
+    - "Oral Presentation @ ACC 2025"
 - id: isamGNC24
   title: "Autonomous Satellite Servicing Infrastructure for In-Space Assembly and Manufacturing"
   venue: ASME Journal of Manufacturing Science and Engineering, 2024
@@ -45,7 +45,7 @@
 - id: jais24
   title: "Safe Spacecraft Inspection via Deep Reinforcement Learning and Discrete Control Barrier Functions"
   venue: AIAA Journal of Aerospace Information Systems (JAIS), 2024
-  description: "RL-based on-orbit spacecraft inspection with safety ensured via control barrier functions and RTA, analyzing task performance under various state constraints."
+  description: "RL-based on-orbit spacecraft inspection with safety ensured via control barrier functions."
   link: https://arc.aiaa.org/doi/10.2514/1.I011391
   image: jais24.png
   # image_mouseover: xx.mp4
@@ -57,7 +57,7 @@
 - id: tro23
   title: "Directional Sensor Planning for Occlusion Avoidance"
   venue: IEEE Transactions on Robotics (T-RO), 2022
-  description: "Novel motion planning framework for directional sensors ensuring target visibility, obstacle avoidance, and efficiency in cluttered environments."
+  description: "Motion planning framework for directional sensors ensuring target visibility, obstacle avoidance, and efficiency in cluttered environments."
   link: https://ieeexplore.ieee.org/document/9893394
   image: tro23.png
   # image_mouseover: https://www.youtube.com/watch?v=RcrCskNsyZM&ab_channel=YuchengChen

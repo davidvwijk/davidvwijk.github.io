@@ -17,7 +17,7 @@
 - id: 6DOFascend
   title: "Run Time Assured Reinforcement Learning for Six Degree-of-Freedom Spacecraft Inspection"
   venue: AIAA ASCEND, 2024
-  description: "RTA-enhanced RL training for 6-DOF spacecraft inspection, enforcing safety via control barrier functions and analyzing trade-offs in performance and safety."
+  description: "RTA-enhanced RL training for 6-DOF spacecraft inspection, enforcing safety via control barrier functions."
   arxiv: '2406.11795'
   link: https://arc.aiaa.org/doi/10.2514/6.2024-4935
   # github: 
@@ -34,7 +34,7 @@
 - id: gnc24
   title: "On-Manifold Collision Avoidance using Tori Parametrization and Control Barrier Functions"
   venue: Rocky Mountain AAS GN&C Conference, 2024
-  description: "Collision mitigation for low-thrust spacecraft in a quasi-periodic orbit using high order control barrier functions."
+  description: "Collision mitigation for low-thrust spacecraft in a quasi-periodic orbit using high-order control barrier functions."
   image: invariantCurve.png
   authors:
     - dvw*
@@ -91,7 +91,7 @@
 - id: trackingRL
   title: "Deep Reinforcement Learning Controller for Autonomous Tracking of Evasive Ground Target"
   venue:  AIAA Scitech Forum, 2023
-  description: "RL-based control for multirotor tracking of maneuvering ground targets using a fixed optical sensor, addressing occlusions and target motion types in simulation."
+  description: "RL-based control for multirotor tracking of maneuvering ground targets using a fixed optical sensor under occlusions."
   # arxiv: '2308.02743'
   link: https://arc.aiaa.org/doi/10.2514/6.2023-0128
   # github: 
