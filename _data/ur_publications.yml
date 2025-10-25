@@ -1,6 +1,6 @@
 - id: ACC-26
   title: "Safety-Critical Control with Bounded Inputs: A Closed-Form Solution for Backup Control Barrier Functions"
-  venue: Submitted to IEEE American Control Conference (ACC), 2026
+  venue: Submitted to American Control Conference (ACC), 2026
   description: "Closed-form controller via optimal interpolation to ensure safety for nonlinear systems with bounded inputs." 
   arxiv: '2510.05436'
   github: davidvwijk/OI-CBF
