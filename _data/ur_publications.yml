@@ -1,3 +1,24 @@
+- id: UE-bCBF
+  title: "Uncertainty Estimators for Robust Backup Control Barrier Functions"
+  venue: Submitted to Automatica, 2025
+  description: "Novel class of CBFs for online controlled invariance of uncertain systems with input constraints, whilst reducing conservatism via uncertainty estimators." 
+  arxiv: '2503.15734'
+  github: davidvwijk/UE-bCBF
+  # link: 
+  image: do-bcbf-tall.png
+  image_mouseover: dobcbf_animation.mp4
+  video: btNq8rAtAkM
+  authors:
+    - dvw 
+    - edas
+    - aanil
+    - scoogan
+    - tmolnar
+    - jburdick
+    - mmajji
+    - khobbs
+  # awards:
+    # - "Oral Presentation"
 - id: ACC-26
   title: "Safety-Critical Control with Bounded Inputs: A Closed-Form Solution for Backup Control Barrier Functions"
   venue: Submitted to American Control Conference (ACC), 2026
@@ -13,25 +34,5 @@
     - tmolnar
     - ames
     - jburdick
-  # awards:
-    # - "Oral Presentation"
-- id: DO-bCBF
-  title: "Disturbance Observers for Robust Backup Control Barrier Functions"
-  venue: Submitted to IEEE Conference on Decision and Control (CDC), 2025
-  description: "Novel class of CBFs for online controlled invariance of uncertain systems with input constraints, whilst reducing conservatism via an observer." 
-  arxiv: '2503.15734'
-  # github: davidvwijk/DR-bCBF
-  # link: 
-  image: do-bcbf-tall.png
-  image_mouseover: dobcbf_animation.mp4
-  authors:
-    - dvw 
-    - edas
-    - aanil
-    - scoogan
-    - tmolnar
-    - jburdick
-    - mmajji
-    - khobbs
   # awards:
     # - "Oral Presentation"
