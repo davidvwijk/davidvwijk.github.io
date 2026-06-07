@@ -92,3 +92,23 @@ jburdick:
   first_name: Joel W.
   last_name: Burdick
   website: https://www.eas.caltech.edu/people/jburdick
+dlee:
+  first_name: Dohyun
+  last_name: Lee
+  website: https://scholar.google.com/citations?user=En-eDgIAAAAJ&hl=ko
+pong: 
+  first_name: Pio
+  last_name: Ong
+  website: https://pioong.github.io/
+mdesa:
+  first_name: Massimiliano
+  last_name: de Sa
+  website: https://mzdesa.github.io/
+pmestres:
+  first_name: Pol
+  last_name: Mestres
+  website: https://polmestres.github.io/
+kechigo:
+  first_name: Kazuya 
+  last_name: Echigo
+  website: https://scholar.google.com/citations?user=0sbjN60AAAAJ&hl=en

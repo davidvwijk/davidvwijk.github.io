@@ -1,3 +1,67 @@
+- id: OutputbCBF
+  title: "Output Feedback Backup Control Barrier Functions: Safety Guarantees Under Input Bounds and State Estimation Error"
+  venue: Submitted to Systems & Control Letters, 2026
+  description: "Safety guarantees with input constraints and state estimation error using backup CBFs."
+  arxiv: '2604.19893'
+  github: davidvwijk/OutputFeedbackCBF
+  # link: 
+  image: O-bCBF.png
+  video: q5r6rP1gVlQ
+  authors:
+    - dvw
+    - tmolnar
+    - scoogan
+    - mmajji 
+    - ames
+    - jburdick
+- id: StochasticCBF26
+  title: "Probabilistic Control Barrier Functions for Systems with State Estimation Uncertainty using Sub-Gaussian Concentration"
+  venue: Submitted to IEEE Control Systems Letters (L-CSS), 2026
+  description: "Particle-based probabilistic CBF framework that overcomes conservatism by exploiting the sub-Gaussian structure of the barrier function increment." 
+  arxiv: '2604.08831'
+  github: kazuyae/Stochastic_CBF
+  # link: 
+  image: stochasticCBF_26.png
+  authors:
+    - kechigo
+    - dvw
+    - pmestres
+    - edas
+    - jburdick
+    - ames
+  # awards:
+    # - "Oral Presentation"
+- id: Combo-bCBF
+  title: "SafeSpace: Aggregating Safe Sets from Backup Control Barrier Functions under Input Constraints"
+  venue: Submitted to the IEEE Conference on Decision and Control (CDC), 2026
+  description: "Safe set expansion using multiple backup sets and controllers to reduce conservatism under input bounds." 
+  arxiv: '2604.03536'
+  # link: 
+  image: comboBCBF.png
+  authors:
+    - pong
+    - dvw
+    - mdesa 
+    - jburdick
+    - ames
+  # awards:
+    # - "Oral Presentation"
+- id: Gen-bCBF
+  title: "Generalizations of Backup Control Barrier Functions: Expansion and Adaptation for Input-Bounded Safety-Critical Control"
+  venue: Submitted to IEEE Control Systems Letters (L-CSS), 2026
+  description: "Generalizing the backup CBF method by decoupling the set expanding controller from the verified backup controller, and allowing for online adaptation." 
+  arxiv: '2603.18450'
+  # link: 
+  image: gen-bcbf.png
+  authors:
+    - dvw 
+    - dlee
+    - edas
+    - tmolnar
+    - ames
+    - jburdick
+  # awards:
+    # - "Oral Presentation"
 - id: UE-bCBF
   title: "Uncertainty Estimators for Robust Backup Control Barrier Functions"
   venue: Submitted to Automatica, 2025
@@ -17,22 +81,5 @@
     - jburdick
     - mmajji
     - khobbs
-  # awards:
-    # - "Oral Presentation"
-- id: ACC-26
-  title: "Safety-Critical Control with Bounded Inputs: A Closed-Form Solution for Backup Control Barrier Functions"
-  venue: Submitted to American Control Conference (ACC), 2026
-  description: "Closed-form controller via optimal interpolation to ensure safety for nonlinear systems with bounded inputs." 
-  arxiv: '2510.05436'
-  github: davidvwijk/OI-CBF
-  # link: 
-  image: hero-acc26_crop.png
-  # image_mouseover: dobcbf_animation.mp4
-  authors:
-    - dvw 
-    - edas
-    - tmolnar
-    - ames
-    - jburdick
   # awards:
     # - "Oral Presentation"
