@@ -1,3 +1,36 @@
+- id: Gen-bCBF
+  title: "Generalizations of Backup Control Barrier Functions: Expansion and Adaptation for Input-Bounded Safety-Critical Control"
+  venue: IEEE Control Systems Letters (L-CSS), 2026
+  description: "Generalizing the backup CBF method by decoupling the set expanding controller from the verified backup controller, and allowing for online adaptation." 
+  arxiv: '2603.18450'
+  link: https://ieeexplore.ieee.org/document/11598930
+  image: gen-bcbf.png
+  authors:
+    - dvw 
+    - dlee
+    - edas
+    - tmolnar
+    - ames
+    - jburdick
+  # awards:
+    # - "Oral Presentation"
+- id: StochasticCBF26
+  title: "Probabilistic Control Barrier Functions for Systems with State Estimation Uncertainty using Sub-Gaussian Concentration"
+  venue: IEEE Control Systems Letters (L-CSS), 2026
+  description: "Particle-based probabilistic CBF framework that overcomes conservatism by exploiting the sub-Gaussian structure of the barrier function increment." 
+  arxiv: '2604.08831'
+  github: kazuyae/Stochastic_CBF
+  # link: 
+  image: stochasticCBF_26.png
+  authors:
+    - kechigo
+    - dvw
+    - pmestres
+    - edas
+    - jburdick
+    - ames
+  # awards:
+    # - "Oral Presentation"
 - id: CEKF25
   title: "Controlling the Kalman Update: A Covariance Constrained Approach"
   venue: IEEE Transactions on Aerospace and Electronic Systems (TAES), 2025

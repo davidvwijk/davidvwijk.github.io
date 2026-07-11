@@ -14,23 +14,6 @@
     - mmajji 
     - ames
     - jburdick
-- id: StochasticCBF26
-  title: "Probabilistic Control Barrier Functions for Systems with State Estimation Uncertainty using Sub-Gaussian Concentration"
-  venue: Submitted to IEEE Control Systems Letters (L-CSS), 2026
-  description: "Particle-based probabilistic CBF framework that overcomes conservatism by exploiting the sub-Gaussian structure of the barrier function increment." 
-  arxiv: '2604.08831'
-  github: kazuyae/Stochastic_CBF
-  # link: 
-  image: stochasticCBF_26.png
-  authors:
-    - kechigo
-    - dvw
-    - pmestres
-    - edas
-    - jburdick
-    - ames
-  # awards:
-    # - "Oral Presentation"
 - id: Combo-bCBF
   title: "SafeSpace: Aggregating Safe Sets from Backup Control Barrier Functions under Input Constraints"
   venue: Submitted to the IEEE Conference on Decision and Control (CDC), 2026
@@ -44,22 +27,6 @@
     - mdesa 
     - jburdick
     - ames
-  # awards:
-    # - "Oral Presentation"
-- id: Gen-bCBF
-  title: "Generalizations of Backup Control Barrier Functions: Expansion and Adaptation for Input-Bounded Safety-Critical Control"
-  venue: Submitted to IEEE Control Systems Letters (L-CSS), 2026
-  description: "Generalizing the backup CBF method by decoupling the set expanding controller from the verified backup controller, and allowing for online adaptation." 
-  arxiv: '2603.18450'
-  # link: 
-  image: gen-bcbf.png
-  authors:
-    - dvw 
-    - dlee
-    - edas
-    - tmolnar
-    - ames
-    - jburdick
   # awards:
     # - "Oral Presentation"
 - id: UE-bCBF
