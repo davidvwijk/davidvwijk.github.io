@@ -1,3 +1,18 @@
+- id: Combo-bCBF
+  title: "SafeSpace: Aggregating Safe Sets from Backup Control Barrier Functions under Input Constraints"
+  venue: Accepted to the IEEE Conference on Decision and Control (CDC), 2026
+  description: "Safe set expansion using multiple backup sets and controllers to reduce conservatism under input bounds." 
+  arxiv: '2604.03536'
+  # link: 
+  image: comboBCBF.png
+  authors:
+    - pong
+    - dvw
+    - mdesa 
+    - jburdick
+    - ames
+  # awards:
+    # - "Oral Presentation"
 - id: ACC-26
   title: "Safety-Critical Control with Bounded Inputs: A Closed-Form Solution for Backup Control Barrier Functions"
   venue: American Control Conference (ACC), 2026 (to appear)
