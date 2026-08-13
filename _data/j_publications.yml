@@ -20,7 +20,7 @@
   description: "Particle-based probabilistic CBF framework that overcomes conservatism by exploiting the sub-Gaussian structure of the barrier function increment." 
   arxiv: '2604.08831'
   github: kazuyae/Stochastic_CBF
-  # link: 
+  link: https://ieeexplore.ieee.org/document/11615269
   image: stochasticCBF_26.png
   authors:
     - kechigo

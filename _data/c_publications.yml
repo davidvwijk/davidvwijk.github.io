@@ -15,11 +15,11 @@
     # - "Oral Presentation"
 - id: ACC-26
   title: "Safety-Critical Control with Bounded Inputs: A Closed-Form Solution for Backup Control Barrier Functions"
-  venue: American Control Conference (ACC), 2026 (to appear)
+  venue: American Control Conference (ACC), 2026
   description: "Closed-form controller via optimal interpolation to ensure safety for nonlinear systems with bounded inputs." 
   arxiv: '2510.05436'
   github: davidvwijk/OI-CBF
-  # link: 
+  link: https://ieeexplore.ieee.org/document/11615348
   image: hero-acc26_crop.png
   authors:
     - dvw 
@@ -27,6 +27,30 @@
     - tmolnar
     - ames
     - jburdick
+  awards:
+    - "Oral Presentation"
+- id: Aero-CBF-Tutorial
+  title: "Control Barrier Functions for Flight-Critical Systems in Aerospace Applications"
+  venue: American Control Conference (ACC), 2026
+  description: "Tutorial paper focused on highlighting the usefulness of CBFs for aerospace systems." 
+  # arxiv: 
+  # github: 
+  link: https://ieeexplore.ieee.org/document/11616397
+  image: blk_diagram_with_ref.png
+  authors:
+    - mcohen
+    - hhussain
+    - tmolnar
+    - dvw
+    - jgaudio
+    - pfisher
+    - mmenner
+    - aannaswamy    
+    - jautenrieb
+    - elavretsky
+    - kwise
+    - rratliff
+    - ames
   awards:
     - "Oral Presentation"
 - id: GNC25

@@ -1,3 +1,18 @@
+- id: robustAdaptivebCBF
+  title: "Robust Adaptive Backup Control Barrier Functions"
+  venue: Submitted to IEEE Control Systems Letters (L-CSS), 2026
+  description: "Addressing parametric uncertainty with adaptive robust bCBFs using duality."
+  arxiv: '2607.20842'
+  github: ersindas/abCBFs
+  # link: 
+  image: robustAbCBF.png
+  # video: 
+  authors:
+    - edas
+    - dvw
+    - tmolnar
+    - ames
+    - jburdick
 - id: OutputbCBF
   title: "Output Feedback Backup Control Barrier Functions: Safety Guarantees Under Input Bounds and State Estimation Error"
   venue: Submitted to Systems & Control Letters, 2026
