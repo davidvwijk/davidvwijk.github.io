@@ -1,3 +1,45 @@
+- id: livenessBCBF
+  title: "Filtering for Liveness: Recurrence via Backup Reachability Control Barrier Functions"
+  venue: Submitted to IEEE Control Systems Letters (L-CSS), 2026
+  description: "Filtering for liveness via backup reachability CBFs and a timing-based mechanism that switches to the reaching controller when necessary."
+  arxiv: '2610.17337'
+  image: liveness.png
+  authors:
+    - dvw
+    - pong
+    - ames
+    - jburdick
+- id: SOS-bCBF
+  title: "Backup Control Barrier Function Synthesis using Sum-of-Squares Reachability"
+  venue: Submitted to IEEE Control Systems Letters (L-CSS), 2026
+  description: "Using sum-of-squares (SOS) tools to generate backup controller and set pairs to enlarge the safe operating region." 
+  arxiv: '2608.27916'
+  image: sos-bCBF.png
+  authors:
+    - jchun
+    - smousavi
+    - dvw 
+    - edas
+    - ames
+    - fbiertumpfel
+- id: UE-bCBF
+  title: "Uncertainty Estimators for Robust Backup Control Barrier Functions"
+  venue: Submitted to IEEE Open Journal of Control Systems (OJ-CSYS), 2026
+  description: "Novel class of CBFs for online controlled invariance of uncertain systems with input constraints, whilst reducing conservatism via uncertainty estimators." 
+  arxiv: '2503.15734'
+  github: davidvwijk/UE-bCBF
+  image: do-bcbf-tall.png
+  image_mouseover: dobcbf_animation.mp4
+  video: btNq8rAtAkM
+  authors:
+    - dvw 
+    - edas
+    - aanil
+    - scoogan
+    - tmolnar
+    - jburdick
+    - mmajji
+    - khobbs
 - id: robustAdaptivebCBF
   title: "Robust Adaptive Backup Control Barrier Functions"
   venue: Submitted to IEEE Control Systems Letters (L-CSS), 2026
@@ -29,24 +71,3 @@
     - mmajji 
     - ames
     - jburdick
-- id: UE-bCBF
-  title: "Uncertainty Estimators for Robust Backup Control Barrier Functions"
-  venue: Submitted to Automatica, 2025
-  description: "Novel class of CBFs for online controlled invariance of uncertain systems with input constraints, whilst reducing conservatism via uncertainty estimators." 
-  arxiv: '2503.15734'
-  github: davidvwijk/UE-bCBF
-  # link: 
-  image: do-bcbf-tall.png
-  image_mouseover: dobcbf_animation.mp4
-  video: btNq8rAtAkM
-  authors:
-    - dvw 
-    - edas
-    - aanil
-    - scoogan
-    - tmolnar
-    - jburdick
-    - mmajji
-    - khobbs
-  # awards:
-    # - "Oral Presentation"

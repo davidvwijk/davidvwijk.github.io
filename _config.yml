@@ -23,11 +23,13 @@ name: David van Wijk
 position: Postdoctoral Scholar
 email: vanwijk@caltech.edu
 description: >-
-  I am a Postdoctoral Scholar in the <a href="https://robotics.caltech.edu/wiki/index.php/Main_Page">Burdick Group</a> at Caltech doing research with <a href="https://www.eas.caltech.edu/people/jburdick">Prof. Joel Burdick</a> and <a href="https://www.eas.caltech.edu/people/adames">Prof. Aaron Ames</a>.
+  I am a Postdoctoral Scientist in the Safe Autonomy Frontiers (SAF) Lab at Amazon.
+
+  Previously, I was a postdoc in the <a href="https://robotics.caltech.edu/wiki/index.php/Main_Page">Burdick Group</a> at Caltech doing research with <a href="https://www.eas.caltech.edu/people/jburdick">Prof. Joel Burdick</a> and <a href="https://www.eas.caltech.edu/people/adames">Prof. Aaron Ames</a>.
   I earned my Ph.D. in Aerospace Engineering at Texas A&M University with <a href="https://engineering.tamu.edu/aerospace/profiles/majji-manoranjan.html">Prof. Manoranjan Majji</a>, where I focused on developing provably safe control algorithms for autonomous systems. I first became interested in control theory during my undergrad at Cornell University with <a href="https://www.engineering.cornell.edu/people/silvia-ferrari/">Prof. Silvia Ferrari</a>.
   During my graduate studies I worked closely with <a href="https://www.linkedin.com/in/kerianne-hobbs-ph-d-13479b27/">Dr. Kerianne Hobbs</a> in the safe autonomy team at <a href="https://www.afrl.af.mil/ACT3/">AFRL</a>. At AFRL, I worked on developing novel safety-critical control methods to allow safe, learning-enabled control on USAF and USSF aerospace systems.<br><br>
   
-  I am interested in problems which merge control theory, optimization, and estimation to enhance the reliability of autonomous systems in complex environments.    
+  I am interested in problems which merge control theory, optimization, and estimation to enhance the safety and reliability of autonomous systems in complex environments.    
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://davidvwijk.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
